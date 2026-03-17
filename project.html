@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE ARCADERS - Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <div class="fire-base"></div>
+
+  <nav class="topbar">
+    <a href="index.html" class="topbar-logo">THE ARCADERS</a>
+    <div class="topbar-links">
+      <a href="index.html">HOME</a>
+      <a href="project.html" class="active">PROJECT</a>
+      <a href="team.html">TEAM</a>
+      <a href="materiaal.html">MATERIAAL</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <img class="hero-logo" src="thearcaders_logo_cropped.png" alt="The Arcaders" />
+    <div class="hero-sub">◆ PROJECT BREAKDOWN ◆ ARCADE CABINET ◆</div>
+    <div class="hero-badges">
+      <span class="badge">11 GAMES</span>
+      <span class="badge">GUPPY TERMINAL</span>
+      <span class="badge">ELECTRON + REACT</span>
+      <span class="badge">LIVE DEMO</span>
+    </div>
+    <div class="event-panel">
+      <div class="event-grid">
+        <div class="event-item">
+          <span class="event-key">DATE</span>
+          <span class="event-value">26 MAART 2026</span>
+        </div>
+        <div class="event-item">
+          <span class="event-key">LOCATION</span>
+          <span class="event-value">KDG CAMPUS GROENPLAATS</span>
+        </div>
+        <div class="event-item">
+          <span class="event-key">TIME</span>
+          <span class="event-value">21:00</span>
+        </div>
+        <div class="event-item">
+          <span class="event-key">ROOM</span>
+          <span class="event-value">GR 211</span>
+        </div>
+      </div>
+      <a class="event-cta" href="https://www.tievents.be/student-conference/#concept" target="_blank" rel="noopener">REGISTER HERE ↗</a>
+    </div>
+  </section>
+
+  <div class="ticker-wrap">
+    <div class="ticker-inner">
+      <span>ARCADE MODULE</span><span>GUPPY OS</span><span>NFC / IR / WIFI</span>
+      <span>AI HINTS</span><span>CABINET CONTROLS</span><span>CONFERENCE 2026</span>
+      <span>ARCADE MODULE</span><span>GUPPY OS</span><span>NFC / IR / WIFI</span>
+      <span>AI HINTS</span><span>CABINET CONTROLS</span><span>CONFERENCE 2026</span>
+    </div>
+  </div>
+
+  <main class="page">
+    <div class="stats-row" data-reveal>
+      <div class="stat-cell">
+        <span class="stat-num">11</span>
+        <span class="stat-label">GAMES</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num">2</span>
+        <span class="stat-label">CORE MODULES</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num">3</span>
+        <span class="stat-label">PLAYERS</span>
+      </div>
+      <div class="stat-cell">
+        <span class="stat-num">1</span>
+        <span class="stat-label">CABINET</span>
+      </div>
+    </div>
+
+    <section class="card" data-reveal>
+      <div class="section-label">◈ OVERVIEW</div>
+      <div class="split-grid">
+        <div>
+          <p class="card-text">The Arcaders is a retro arcade cabinet built as a conference project that mixes game nostalgia with custom hardware interactions.</p>
+          <p class="card-text">The experience is split into two sides: a playable arcade frontend and the Guppy terminal, a hardware dashboard that exposes NFC, IR and wireless experiments in the same visual language.</p>
+          <div class="page-actions">
+            <a href="team.html" class="page-link">MEET THE TEAM ↗</a>
+            <a href="materiaal.html" class="page-link">OPEN MATERIALS ↗</a>
+          </div>
+        </div>
+        <div class="detail-list">
+          <div class="detail-item">
+            <span class="detail-name">BUILD TYPE</span>
+            <span class="detail-value">STATIC SHOWCASE SITE</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-name">FRONTEND</span>
+            <span class="detail-value">ELECTRON / REACT</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-name">HARDWARE</span>
+            <span class="detail-value">NFC / IR / WIFI</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-name">EVENT</span>
+            <span class="detail-value">KDG GROENPLAATS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="arcade" data-reveal>
+      <div class="section-label">◈ ARCADE MODULE</div>
+      <div class="preview-grid">
+        <div class="preview-pane">
+          <div class="fake-arcade">
+            <div class="wheel-dot"></div>
+            <div class="wheel-dot"></div>
+            <div class="wheel-dot"></div>
+            <div class="wheel-dot"></div>
+            <div class="wheel-dot"></div>
+            <div class="wheel-dot"></div>
+            <div class="wheel-center">PLAY</div>
+          </div>
+          <div class="preview-label">GAME SELECTOR</div>
+          <div class="preview-desc">A CRT-inspired launcher with cabinet controls, animated transitions and a playful score-driven interface.</div>
+        </div>
+        <div class="preview-pane">
+          <div class="preview-label">WHAT IT DOES</div>
+          <div class="preview-desc">Browse 11 games, launch with gamepad input, trigger in-game hints and keep the whole interaction readable for live demos at the conference.</div>
+          <a href="#guppy" class="preview-link">NEXT: GUPPY →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="guppy" data-reveal>
+      <div class="section-label">◈ GUPPY TERMINAL</div>
+      <div class="preview-grid">
+        <div class="preview-pane">
+          <div class="fake-screen">
+            <div class="fake-line">&gt; GUPPY OS ONLINE</div>
+            <div class="fake-line">&gt; NFC HANDSHAKE.....[OK]</div>
+            <div class="fake-line">&gt; IR CHANNEL........[OK]</div>
+            <div class="fake-line">&gt; WIFI TEST.........[OK]</div>
+            <div class="fake-line">&gt; READY FOR DEMO____</div>
+          </div>
+          <div class="preview-label">HARDWARE DASHBOARD</div>
+          <div class="preview-desc">A terminal-style control layer exposing experiments and system feedback in real time.</div>
+        </div>
+        <div class="preview-pane">
+          <div class="preview-label">WHAT IT DOES</div>
+          <div class="preview-desc">The Guppy side bundles the hackable interactions into one interface so the team can explain hardware features without leaving the cabinet flow.</div>
+          <a href="materiaal.html" class="preview-link">OPEN MATERIALS →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" data-reveal>
+      <div class="section-label">◈ TECH STACK</div>
+      <div class="stack-grid">
+        <div class="stack-card">
+          <span class="stack-type">APP LAYER</span>
+          <div class="stack-title">ELECTRON</div>
+          <div class="stack-text">Desktop shell for packaging the cabinet experience into a single launch flow.</div>
+        </div>
+        <div class="stack-card">
+          <span class="stack-type">UI LAYER</span>
+          <div class="stack-title">REACT</div>
+          <div class="stack-text">Component-driven frontend for menus, hints and interactive state changes.</div>
+        </div>
+        <div class="stack-card">
+          <span class="stack-type">VISUAL LAYER</span>
+          <div class="stack-title">RETRO CRT</div>
+          <div class="stack-text">Pixel fonts, scanlines, glows and arcade motion cues to keep the identity coherent.</div>
+        </div>
+        <div class="stack-card">
+          <span class="stack-type">HARDWARE LAYER</span>
+          <div class="stack-title">NFC / IR / WIFI</div>
+          <div class="stack-text">Physical experiments surfaced through the Guppy terminal and cabinet controls.</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="nav-grid" data-reveal>
+      <a href="index.html" class="nav-card">
+        <span class="nav-icon">◈</span>
+        <div class="nav-body">
+          <div class="nav-title">HOME</div>
+          <div class="nav-desc">Back to the homepage and event overview.</div>
+        </div>
+        <span class="nav-arrow">→</span>
+      </a>
+      <a href="team.html" class="nav-card">
+        <span class="nav-icon">◉</span>
+        <div class="nav-body">
+          <div class="nav-title">TEAM</div>
+          <div class="nav-desc">See the player cards and role split.</div>
+        </div>
+        <span class="nav-arrow">→</span>
+      </a>
+      <a href="materiaal.html" class="nav-card">
+        <span class="nav-icon">◧</span>
+        <div class="nav-body">
+          <div class="nav-title">MATERIAAL</div>
+          <div class="nav-desc">Video, article, slides and repo links.</div>
+        </div>
+        <span class="nav-arrow">→</span>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    The Arcaders &nbsp;·&nbsp; Conference 2026 &nbsp;·&nbsp; <em>INSERT COIN</em>
+  </footer>
+
+  <script src="theme.js"></script>
+</body>
+</html>

@@ -1,15 +1,15 @@
-# THE ARCADERS — Conference Website
+# THE ARCADERS - Conference Website
 
-> Conference project website for The Arcaders — a retro arcade cabinet built with Electron, React & TypeScript.
+> Conference project website for The Arcaders - a retro arcade cabinet built with Electron, React & TypeScript.
 > Hosted via GitLab Pages.
 
 ---
 
 ## Overview
 
-**The Arcaders** is a team project presented at the 2025 conference. This static website gives visitors a quick overview of the project, the team behind it, and links to all related materials.
+**The Arcaders** is a team project presented at the 2026 conference. This static multipage website gives visitors a quick overview of the project, the team behind it, and links to all related materials.
 
-The site features a Pac-Man boot animation on load, a retro CRT aesthetic matching the project's visual identity, and sections for the project description, team, and conference materials.
+The site uses a shared retro CRT visual style across the homepage, project page, team page and materials page, with a consistent event header on each page.
 
 ---
 
@@ -17,64 +17,63 @@ The site features a Pac-Man boot animation on load, a retro CRT aesthetic matchi
 
 ```
 /
-├── index.html                     # Single-page website
+├── index.html                     # Homepage
+├── project.html                   # Project breakdown
+├── team.html                      # Team page
+├── materiaal.html                 # Materials page
+├── theme.css                      # Shared styling
+├── theme.js                       # Shared animations / interactions
 ├── thearcaders_logo_cropped.png   # Team logo asset
-├── .gitlab-ci.yml                 # GitLab Pages pipeline
 └── README.md
 ```
 
-### Page Sections
+### Pages
 
 ```
-┌─────────────────────────────────────────────────┐
-│  LOADER      Pac-Man boot animation              │
-│  HERO        Logo, tagline, badges               │
-│  TICKER      Scrolling marquee                   │
-├─────────────────────────────────────────────────┤
-│  PROJECT     What The Arcaders is                │
-│  TEAM        3 members with LinkedIn links       │
-│  MATERIAAL   Video · Article · Slides · Repo     │
-└─────────────────────────────────────────────────┘
+HOME        Landing page with event details and previews
+PROJECT     Modules, concept and stack
+TEAM        Team cards and role overview
+MATERIAAL   Video, article, slides and source links
 ```
 
 ---
 
 ## Updating Content
 
-All content lives in `index.html`. Search for the `VERVANG` placeholder to find everything that needs to be filled in.
+Shared styling lives in `theme.css`, shared interactions live in `theme.js`, and page content lives in the individual HTML files. Search for the `VERVANG` placeholder to find the team links that still need real data.
 
 ### Team cards
 
-Each of the three team blocks looks like this:
+Compact cards on the homepage look like this:
 
 ```html
-<a href="https://linkedin.com/in/VERVANG" target="_blank" rel="noopener" class="team-card">
-  <div class="avatar">P1</div>
-  <div class="team-name">TEAMLID 1</div>
-  <div class="team-role">Rol / specialisatie</div>
-  <span class="li-btn">LINKEDIN ↗</span>
+<a href="https://linkedin.com/in/VERVANG" target="_blank" rel="noopener" class="player-mini">
+  <div class="mini-avatar">P1</div>
+  <div class="mini-name">TEAMLID 1</div>
+  <div class="mini-role">Rol / specialisatie</div>
+  <span class="mini-li">LINKEDIN ↗</span>
 </a>
 ```
 
-Replace `VERVANG` with the LinkedIn slug, `TEAMLID 1` with the real name, `P1` with initials, and `Rol / specialisatie` with the actual role.
+Replace `VERVANG` with the LinkedIn slug, `TEAMLID 1` with the real name, `P1` with initials, and `Rol / specialisatie` with the actual role. The same placeholders also appear on `team.html`.
 
 ### Material links
 
-Find the four tiles in the `MATERIAAL` section:
+Find the four resource cards in `materiaal.html`:
 
 ```html
 <!-- Replace # with real URL when available -->
-<a href="#" class="link-tile">
+<a href="#" class="resource-link">
 
 <!-- Repo link -->
-<a href="https://gitlab.com/VERVANG-REPO" ...>
+<a href="#" class="resource-link">
 ```
 
-Once a link is live, also remove the `COMING SOON` badge from that tile:
+Once a link is live, also remove the `COMING SOON` badge from that card:
 
 ```html
 <!-- Remove this line when the link is ready -->
-<span class="tile-soon">COMING SOON</span>
+<span class="resource-soon">COMING SOON</span>
 ```
 
 ---
@@ -96,6 +95,11 @@ pages:
   script:
     - mkdir -p public
     - cp index.html public/
+    - cp project.html public/
+    - cp team.html public/
+    - cp materiaal.html public/
+    - cp theme.css public/
+    - cp theme.js public/
     - cp thearcaders_logo_cropped.png public/
   artifacts:
     paths:
@@ -125,8 +129,8 @@ https://<namespace>.gitlab.io/<repository-name>
 | Layer | Technology |
 |---|---|
 | Markup | HTML5 |
-| Styling | CSS3 — custom properties, keyframe animations |
-| Logic | Vanilla JavaScript — no build step, no dependencies |
+| Styling | CSS3 - custom properties, keyframe animations |
+| Logic | Vanilla JavaScript - no build step, no dependencies |
 | Fonts | Press Start 2P · Share Tech Mono (Google Fonts) |
 | Loader | Pac-Man animation — uiverse.io / JkHuger |
 | Hosting | GitLab Pages |
@@ -143,4 +147,4 @@ https://<namespace>.gitlab.io/<repository-name>
 
 ---
 
-*The Arcaders · Conference 2025 · INSERT COIN*
+*The Arcaders · Conference 2026 · INSERT COIN*
