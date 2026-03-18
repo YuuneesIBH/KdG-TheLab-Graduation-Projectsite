@@ -8,7 +8,7 @@ create-pages:
     - cp materiaal.html public/
     - cp theme.css public/
     - cp theme.js public/
-    - cp thearcaders_logo_cropped.png public/
+    - cp -R assets public/
   artifacts:
     paths:
       - public

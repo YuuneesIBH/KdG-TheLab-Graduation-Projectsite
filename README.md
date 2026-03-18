@@ -23,7 +23,7 @@ The site uses a shared retro CRT visual style across the homepage, project page,
 ├── materiaal.html                 # Materials page
 ├── theme.css                      # Shared styling
 ├── theme.js                       # Shared animations / interactions
-├── thearcaders_logo_cropped.png   # Team logo asset
+├── assets/                        # Logo and profile images
 └── README.md
 ```
 
@@ -90,7 +90,7 @@ Once a link is live, also remove the `COMING SOON` badge from that card:
 Create `.gitlab-ci.yml` in the repo root:
 
 ```yaml
-pages:
+create-pages:
   stage: deploy
   script:
     - mkdir -p public
@@ -100,12 +100,13 @@ pages:
     - cp materiaal.html public/
     - cp theme.css public/
     - cp theme.js public/
-    - cp thearcaders_logo_cropped.png public/
+    - cp -R assets public/
   artifacts:
     paths:
       - public
-  only:
-    - main
+  pages: true
+  rules:
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
 ```
 
 ### Deploy
