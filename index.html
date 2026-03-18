@@ -24,12 +24,12 @@
   <section class="hero">
     <div class="hero-glow"></div>
     <img class="hero-logo" src="thearcaders_logo_cropped.png" alt="The Arcaders" />
-    <div class="hero-sub">◆ ARCADE SYSTEM ◆ CONFERENCE 2026 ◆</div>
+    <div class="hero-sub">◆ HYBRID ARCADE PLATFORM ◆ ARCADE x GUPPY ◆</div>
     <div class="hero-badges">
+      <span class="badge">11 LOCAL GAMES</span>
+      <span class="badge">ESP32 BRIDGE</span>
+      <span class="badge">LOCAL AI HINTS</span>
       <span class="badge">ELECTRON + REACT</span>
-      <span class="badge">ARCADE CABINET</span>
-      <span class="badge">HARDWARE HACKING</span>
-      <span class="badge">TEAM PROJECT</span>
     </div>
     <div class="event-panel">
       <div class="event-grid">
@@ -56,12 +56,12 @@
 
   <div class="ticker-wrap">
     <div class="ticker-inner">
-      <span>★ THE ARCADERS</span><span>INSERT COIN</span><span>HIGH SCORE</span>
-      <span>GUPPY TERMINAL</span><span>NFC · IR · WIFI</span><span>PLAY NOW</span>
-      <span>1UP READY</span><span>CONFERENCE 2026</span><span>CRT MODE ON</span>
-      <span>★ THE ARCADERS</span><span>INSERT COIN</span><span>HIGH SCORE</span>
-      <span>GUPPY TERMINAL</span><span>NFC · IR · WIFI</span><span>PLAY NOW</span>
-      <span>1UP READY</span><span>CONFERENCE 2026</span><span>CRT MODE ON</span>
+      <span>★ THE ARCADERS</span><span>ARCADE EXPERIENCE</span><span>GUPPY TERMINAL</span>
+      <span>LOCAL AI HINTS</span><span>USB SERIAL</span><span>ESP32 BRIDGE</span>
+      <span>11 GAMES</span><span>CONFERENCE 2026</span><span>CRT MODE ON</span>
+      <span>★ THE ARCADERS</span><span>ARCADE EXPERIENCE</span><span>GUPPY TERMINAL</span>
+      <span>LOCAL AI HINTS</span><span>USB SERIAL</span><span>ESP32 BRIDGE</span>
+      <span>11 GAMES</span><span>CONFERENCE 2026</span><span>CRT MODE ON</span>
     </div>
   </div>
 
@@ -72,48 +72,71 @@
         <span class="stat-label">GAMES</span>
       </div>
       <div class="stat-cell">
-        <span class="stat-num">3</span>
-        <span class="stat-label">PLAYERS</span>
+        <span class="stat-num">2</span>
+        <span class="stat-label">MODES</span>
       </div>
       <div class="stat-cell">
-        <span class="stat-num" id="s-score">000000</span>
-        <span class="stat-label">HIGH SCORE</span>
+        <span class="stat-num">AI</span>
+        <span class="stat-label">LOCAL HINTS</span>
       </div>
       <div class="stat-cell">
-        <span class="stat-num">2026</span>
-        <span class="stat-label">CONFERENCE</span>
+        <span class="stat-num">ESP32</span>
+        <span class="stat-label">USB BRIDGE</span>
       </div>
     </div>
 
     <section class="card" data-reveal>
-      <div class="section-label">◈ PROJECT PREVIEW</div>
-      <div class="preview-grid">
-        <div class="preview-pane">
-          <div class="fake-arcade">
-            <div class="wheel-dot"></div>
-            <div class="wheel-dot"></div>
-            <div class="wheel-dot"></div>
-            <div class="wheel-dot"></div>
-            <div class="wheel-dot"></div>
-            <div class="wheel-dot"></div>
-            <div class="wheel-center">SELECT</div>
+      <div class="section-label">◈ PLATFORM SPLIT</div>
+      <p class="card-text section-intro">The Lab Graduation brengt twee werelden samen in hetzelfde cabinet: een arcade launcher voor beleving en gameplay, en een Guppy terminal voor hardware, tools en live demo-interactie.</p>
+      <div class="mode-grid">
+        <article class="mode-card arcade-mode">
+          <div class="mode-visual">
+            <div class="display-shell display-arcade display-shell-compact">
+              <div class="display-header">
+                <span>ARCADE READY</span>
+                <span>11 GAMES</span>
+              </div>
+              <div class="arcade-carousel">
+                <div class="arcade-slot arcade-slot-active">PIXEL RUNNER</div>
+                <div class="arcade-slot">BYTE RACER</div>
+                <div class="arcade-slot">JAVA QUEST</div>
+              </div>
+            </div>
           </div>
-          <div class="preview-label">ARCADE MODULE</div>
-          <div class="preview-desc">CRT game selector with 11 games, gamepad support and AI hints.</div>
+          <span class="mode-kicker">NORMAL ARCADE SIDE</span>
+          <h2 class="mode-title">Arcade Experience</h2>
+          <p class="mode-text">Een visuele cabinet flow met bootscreen, CRT-look, gamepadbediening en een coherente launcher voor meerdere runtimes.</p>
+          <div class="mode-chip-row">
+            <span class="mode-chip">CRT UI</span>
+            <span class="mode-chip">GAMEPAD</span>
+            <span class="mode-chip">AI HINTS</span>
+          </div>
           <a href="project.html#arcade" class="preview-link">READ MORE →</a>
-        </div>
-        <div class="preview-pane">
-          <div class="fake-screen">
-            <div class="fake-line">&gt; GUPPY OS v1.0 - ARM CORTEX</div>
-            <div class="fake-line">&gt; NFC MODULE........[OK]</div>
-            <div class="fake-line">&gt; IR BLASTER........[OK]</div>
-            <div class="fake-line">&gt; WIFI LINK..........[OK]</div>
-            <div class="fake-line">&gt; ROOT ACCESS GRANTED_</div>
+        </article>
+        <article class="mode-card guppy-mode">
+          <div class="mode-visual">
+            <div class="display-shell display-guppy display-shell-compact">
+              <div class="display-header">
+                <span>GUPPY ONLINE</span>
+                <span>USB SERIAL</span>
+              </div>
+              <div class="terminal-stack">
+                <div class="terminal-line"><span class="terminal-prompt">&gt;</span> detect board [ok]</div>
+                <div class="terminal-line"><span class="terminal-prompt">&gt;</span> sync capabilities</div>
+                <div class="terminal-line"><span class="terminal-prompt">&gt;</span> wifi scan --passive</div>
+              </div>
+            </div>
           </div>
-          <div class="preview-label">GUPPY TERMINAL</div>
-          <div class="preview-desc">Hardware hacking dashboard with NFC, IR blast and Wi-Fi controls.</div>
+          <span class="mode-kicker">HACKER / LAB SIDE</span>
+          <h2 class="mode-title">Guppy Terminal</h2>
+          <p class="mode-text">Een terminalachtige omgeving die via ESP32 en USB-serial communiceert met tools voor IR, Wi-Fi en device-aware labfuncties.</p>
+          <div class="mode-chip-row">
+            <span class="mode-chip">ESP32</span>
+            <span class="mode-chip">AUTO RECONNECT</span>
+            <span class="mode-chip">IR / WIFI</span>
+          </div>
           <a href="project.html#guppy" class="preview-link">READ MORE →</a>
-        </div>
+        </article>
       </div>
       <div class="page-actions">
         <a href="project.html" class="page-link">FULL PROJECT DETAILS ↗</a>
@@ -155,7 +178,7 @@
         <span class="nav-icon">◈</span>
         <div class="nav-body">
           <div class="nav-title">PROJECT</div>
-          <div class="nav-desc">Architecture, modules and tech stack.</div>
+          <div class="nav-desc">Hybrid architecture, arcade flow en Guppy hacker mode.</div>
         </div>
         <span class="nav-arrow">→</span>
       </a>
