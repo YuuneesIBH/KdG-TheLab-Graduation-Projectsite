@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
       <a href="index.html">HOME</a>
       <a href="project.html" class="active">PROJECT</a>
       <a href="team.html">TEAM</a>
-      <a href="materiaal.html">MATERIAAL</a>
+      <a href="materiaal.html">MATERIALS</a>
     </div>
   </nav>
 
@@ -32,19 +32,20 @@
       <span class="badge">ELECTRON + REACT</span>
     </div>
     <div class="hero-copy-panel">
-      <p class="hero-lead">The Lab Graduation: Arcade &amp; Hacking Platform combineert een klassieke retro arcade met een experimenteel hardware- en securityplatform in een enkele fullscreen desktopervaring.</p>
-      <p class="hero-note">De applicatie schakelt van een sfeervolle arcade launcher naar een terminalachtige Guppy-omgeving die via USB-serial samenwerkt met een DIY ESP32-bord, lokale tools en een uitbreidbare AI-laag.</p>
+      <p class="hero-lead">The Lab Graduation: Arcade &amp; Hacking Platform combines the atmosphere of a classic retro arcade with the flexibility of an experimental hardware and security platform in one fullscreen desktop experience.</p>
+      <p class="hero-note">The application shifts from a cinematic arcade launcher into a terminal-style Guppy environment that works over USB serial with a DIY ESP32 board, local tools, and an expandable AI layer.</p>
       <div class="hero-jumps">
         <a href="#arcade" class="hero-jump">ARCADE FLOW</a>
         <a href="#guppy" class="hero-jump hero-jump-hack">GUPPY MODE</a>
-        <a href="#architecture" class="hero-jump">ARCHITECTUUR</a>
+        <a href="#architecture" class="hero-jump">ARCHITECTURE</a>
+        <a href="#article" class="hero-jump">ARTICLE</a>
       </div>
     </div>
     <div class="event-panel">
       <div class="event-grid">
         <div class="event-item">
           <span class="event-key">DATE</span>
-          <span class="event-value">26 MAART 2026</span>
+          <span class="event-value">26 MARCH 2026</span>
         </div>
         <div class="event-item">
           <span class="event-key">LOCATION</span>
@@ -96,8 +97,8 @@
       <div class="section-label">◈ PROJECT DNA</div>
       <div class="split-grid">
         <div>
-          <p class="card-text">Dit project vertrekt niet vanuit een gewone game launcher, maar vanuit het idee dat een digitale speelomgeving ook een fysieke en technische installatie kan zijn. Daarom zit de retro arcade-ervaring niet los van de hardwarelaag, maar er middenin.</p>
-          <p class="card-text">Aan de ene kant krijg je een volledige cabinet flow met bootscreen, CRT-effecten, lokale games en gamepadbediening. Aan de andere kant opent Guppy een labgerichte omgeving waarin de app rechtstreeks samenwerkt met firmware, tools, scans en externe modules.</p>
+          <p class="card-text">This project does not start from the idea of a simple launcher. It starts from the idea that a digital play environment can also be a physical, technical, and interactive installation.</p>
+          <p class="card-text">One side delivers a complete cabinet flow with boot screens, CRT effects, local games, and gamepad controls. The other opens Guppy, a lab-oriented environment where the desktop app works directly with firmware, tools, scans, and external modules.</p>
           <div class="page-actions">
             <a href="team.html" class="page-link">MEET THE TEAM ↗</a>
             <a href="materiaal.html" class="page-link">OPEN MATERIALS ↗</a>
@@ -106,7 +107,7 @@
         <div class="detail-list">
           <div class="detail-item">
             <span class="detail-name">BUILD TYPE</span>
-            <span class="detail-value">HYBRIDE FULLSCREEN DESKTOPAPP</span>
+            <span class="detail-value">HYBRID FULLSCREEN DESKTOP APP</span>
           </div>
           <div class="detail-item">
             <span class="detail-name">UI FLOW</span>
@@ -132,17 +133,31 @@
       </div>
     </section>
 
+    <section class="card" id="article" data-reveal>
+      <div class="section-label">◈ FEATURE ARTICLE</div>
+      <div class="article-flow">
+        <p class="card-text article-paragraph">The Lab Graduation: Arcade &amp; Hacking Platform is a hybrid desktop project that deliberately brings together two very different worlds: the emotional pull of a classic retro arcade and the flexibility of an experimental hardware and security platform. Instead of behaving like a simple game launcher, the application treats play as part of a larger interactive installation.</p>
+        <p class="card-text article-paragraph">The first layer is the arcade experience. From the moment the platform boots, the interface aims to feel like a real cabinet through fullscreen presentation, CRT-inspired effects, glitch animation, and gamepad-friendly navigation. Users can browse a local game library that already includes eleven built-in titles across Python, Java, and native runtimes, while the launcher keeps that diversity visually consistent inside one shared shell.</p>
+        <p class="card-text article-paragraph">What makes the project stand out is Guppy, the second layer. Guppy transforms the same application into a terminal-style control environment that communicates over USB serial with a DIY ESP32-based board. From there, the system can expose functions such as IR commands, Wi-Fi scans, audit information, and access-point management while adapting the interface to the capabilities reported by the connected firmware.</p>
+        <p class="card-text article-paragraph">An AI layer extends the platform without taking focus away from the core experience. During gameplay, the system can generate short contextual hints through Ollama based on the selected title, genre, and difficulty. The same architectural direction can later evolve toward hybrid or cloud-backed orchestration, real-time multiplayer sessions, and sandboxed cyber challenges.</p>
+        <p class="card-text article-paragraph">Taken together, the project demonstrates interdisciplinary building in a practical and visible way. Frontend design, desktop orchestration, embedded hardware, local tooling, and AI-assisted interaction all meet inside one coherent cabinet experience. Security-oriented features remain intended for controlled, authorized demo or lab environments only.</p>
+      </div>
+      <div class="page-actions">
+        <a href="materiaal.html" class="page-link">VIEW ALL MATERIALS ↗</a>
+      </div>
+    </section>
+
     <section class="card" data-reveal>
       <div class="section-label">◈ TWO SIDES OF THE PLATFORM</div>
       <div class="mode-grid">
         <article class="mode-card arcade-mode">
           <span class="mode-kicker">CLASSIC PLAYFLOW</span>
           <h2 class="mode-title">Arcade Experience</h2>
-          <p class="mode-text">De arcadekant draait rond sfeer, ritme en leesbaarheid. Van attract-style bootscreen tot gamebibliotheek: alles voelt alsof het in een enkele retro cabinet shell thuishoort, ook wanneer de onderliggende games technisch totaal verschillend zijn.</p>
+          <p class="mode-text">The arcade side is built around atmosphere, rhythm, and clarity. From the attract-style boot screen to the game library, everything is designed to feel like it belongs inside one retro cabinet shell, even when the games themselves use very different technologies.</p>
           <div class="mode-chip-row">
             <span class="mode-chip">CRT BOOT FLOW</span>
             <span class="mode-chip">GAMEPAD INPUT</span>
-            <span class="mode-chip">11 TITELS</span>
+            <span class="mode-chip">11 TITLES</span>
             <span class="mode-chip">RUNTIME ORCHESTRATION</span>
           </div>
           <a href="#arcade" class="preview-link">OPEN ARCADE FLOW →</a>
@@ -150,7 +165,7 @@
         <article class="mode-card guppy-mode">
           <span class="mode-kicker">LAB / HACKER FLOW</span>
           <h2 class="mode-title">Guppy Terminal</h2>
-          <p class="mode-text">Guppy verandert dezelfde app in een terminalachtige interface voor hardware-interactie. Via USB-serial koppelt de desktoplaag met een DIY bord, leest capabilities uit de firmware en exposeert alleen de functies die het aangesloten device echt ondersteunt.</p>
+          <p class="mode-text">Guppy turns the same application into a terminal-like interface for hardware interaction. Over USB serial, the desktop layer connects to a DIY board, reads capabilities from the firmware, and only exposes features that the connected device actually supports.</p>
           <div class="mode-chip-row">
             <span class="mode-chip">USB SERIAL</span>
             <span class="mode-chip">AUTO RECONNECT</span>
@@ -185,24 +200,24 @@
           </div>
         </div>
         <div class="preview-pane preview-copy-pane">
-          <div class="preview-label">VAN BOOTSCREEN TOT GAME START</div>
-          <div class="preview-desc preview-desc-lg">Vanaf het bootscherm wil de interface aanvoelen als een echte arcade cabinet: fullscreen, retro, ritmisch en direct leesbaar voor toeschouwers. De launcher beheert meerdere runtimes centraal en houdt de volledige gameflow visueel coherent, zodat verschillende soorten software toch als eenzelfde platform aanvoelen.</div>
+          <div class="preview-label">FROM BOOT SCREEN TO GAME LAUNCH</div>
+          <div class="preview-desc preview-desc-lg">From the very first boot screen, the interface is meant to feel like a real arcade cabinet: fullscreen, retro, rhythmic, and easy to read for an audience. The launcher centrally manages multiple runtimes and keeps the entire game flow visually coherent, so different kinds of software still feel like one platform.</div>
           <div class="capability-grid">
             <div class="capability-card">
               <span class="capability-label">VISUAL FLOW</span>
-              <div class="capability-text">CRT-achtige effecten, glitchanimaties, scanlines en een attract-mode sfeer.</div>
+              <div class="capability-text">CRT-style effects, glitch animation, scanlines, and an attract-mode atmosphere.</div>
             </div>
             <div class="capability-card">
               <span class="capability-label">GAME CATALOG</span>
-              <div class="capability-text">Elf ingebouwde games in een gedeelde shell, ongeacht of ze Python, Java of native zijn.</div>
+              <div class="capability-text">Eleven built-in games inside one shared shell, whether they are Python, Java, or native.</div>
             </div>
             <div class="capability-card">
               <span class="capability-label">INPUT LAYER</span>
-              <div class="capability-text">Gamepad- en cabinetbesturing om snel en consistent door de bibliotheek te bewegen.</div>
+              <div class="capability-text">Gamepad and cabinet controls for fast, consistent movement through the library.</div>
             </div>
             <div class="capability-card">
               <span class="capability-label">LIVE DEMO READY</span>
-              <div class="capability-text">Leesbare UI en centrale launching flow die sterk werkt in een beurs- of conferentiecontext.</div>
+              <div class="capability-text">Readable UI and a centralized launch flow that works well in a live showcase or conference setting.</div>
             </div>
           </div>
           <a href="#guppy" class="preview-link">NEXT: GUPPY MODE →</a>
@@ -234,24 +249,24 @@
           </div>
         </div>
         <div class="preview-pane preview-copy-pane">
-          <div class="preview-label">WAAR SOFTWARE EN HARDWARE SAMENKOMEN</div>
-          <div class="preview-desc preview-desc-lg">Guppy transformeert dezelfde applicatie naar een terminalgerichte omgeving waarin software, firmware en fysieke modules samenwerken. De desktopapp detecteert het bord automatisch, probeert periodiek opnieuw te verbinden bij verlies van connectie en leest capability-info uit zodat de interface zich aanpast aan het effectieve device.</div>
+          <div class="preview-label">WHERE SOFTWARE MEETS HARDWARE</div>
+          <div class="preview-desc preview-desc-lg">Guppy transforms the same application into a terminal-oriented environment where software, firmware, and physical modules work together. The desktop app automatically detects the board, periodically retries after a dropped connection, and reads capability data so the interface can adapt to the actual device.</div>
           <div class="capability-grid">
             <div class="capability-card capability-card-hack">
               <span class="capability-label">AUTO DETECT</span>
-              <div class="capability-text">USB-serial hardware wordt automatisch gevonden en opnieuw gekoppeld wanneer de link wegvalt.</div>
+              <div class="capability-text">USB serial hardware is detected automatically and reconnected when the link drops.</div>
             </div>
             <div class="capability-card capability-card-hack">
               <span class="capability-label">DEVICE-AWARE UI</span>
-              <div class="capability-text">De interface leest firmware capabilities uit en toont alleen functies die echt beschikbaar zijn.</div>
+              <div class="capability-text">The interface reads firmware capabilities and only shows functions that are actually available.</div>
             </div>
             <div class="capability-card capability-card-hack">
               <span class="capability-label">LAB TOOLS</span>
-              <div class="capability-text">IR-commando's, Wi-Fi scans, auditinfo en access-pointbeheer in een gedeelde control layer.</div>
+              <div class="capability-text">IR commands, Wi-Fi scans, audit data, and access-point management in one shared control layer.</div>
             </div>
             <div class="capability-card capability-card-hack">
-              <span class="capability-label">PRAKTISCHE DATA</span>
-              <div class="capability-text">Lokale opslag voor AP-profielen, scanresultaten en voorbeelddata voor demo workflows.</div>
+              <span class="capability-label">PRACTICAL DATA</span>
+              <div class="capability-text">Local storage for AP profiles, scan results, and example data used in demo workflows.</div>
             </div>
           </div>
           <a href="materiaal.html" class="preview-link">OPEN MATERIALS →</a>
@@ -260,47 +275,47 @@
     </section>
 
     <section class="card" id="architecture" data-reveal>
-      <div class="section-label">◈ ARCHITECTUUR</div>
+      <div class="section-label">◈ ARCHITECTURE</div>
       <div class="stack-grid architecture-grid">
         <div class="stack-card">
           <span class="stack-type">APP LAYER</span>
           <div class="stack-title">ELECTRON</div>
-          <div class="stack-text">Fullscreen desktop shell die de volledige cabinet flow, procesopstart en app-omkadering beheert.</div>
+          <div class="stack-text">Fullscreen desktop shell responsible for the cabinet flow, process startup, and application framing.</div>
         </div>
         <div class="stack-card">
           <span class="stack-type">UI LAYER</span>
           <div class="stack-title">REACT</div>
-          <div class="stack-text">Componentgedreven frontend voor menu's, overlays, hints, states en mode-switches.</div>
+          <div class="stack-text">Component-driven frontend for menus, overlays, hints, state transitions, and mode switching.</div>
         </div>
         <div class="stack-card">
           <span class="stack-type">SECURE BRIDGE</span>
           <div class="stack-title">PRELOAD</div>
-          <div class="stack-text">Veilige communicatielaag tussen renderer en main process zodat UI en systeemacties gescheiden blijven.</div>
+          <div class="stack-text">Safe communication layer between the renderer and the main process, keeping UI and system actions separated.</div>
         </div>
         <div class="stack-card">
           <span class="stack-type">SYSTEM CONTROL</span>
           <div class="stack-title">MAIN PROCESS</div>
-          <div class="stack-text">Beheert game launching, serial communicatie, externe processen, opslag en toolstatus.</div>
+          <div class="stack-text">Manages game launching, serial communication, external processes, storage, and tool status.</div>
         </div>
         <div class="stack-card">
           <span class="stack-type">DEVICE LAYER</span>
           <div class="stack-title">ESP32 BRIDGE</div>
-          <div class="stack-text">DIY firmwarebord dat als brug dient tussen interface, commando's en externe hardwaremodules.</div>
+          <div class="stack-text">DIY firmware board that acts as a bridge between the interface, commands, and external hardware modules.</div>
         </div>
         <div class="stack-card">
           <span class="stack-type">TOOLING LAYER</span>
           <div class="stack-title">IR / WIFI / AUDIT</div>
-          <div class="stack-text">Voorbeeldcommando's, scans en beheerfuncties die in Guppy samenkomen als een labdashboard.</div>
+          <div class="stack-text">Example commands, scans, and management functions that come together in Guppy as a lab dashboard.</div>
         </div>
         <div class="stack-card">
           <span class="stack-type">DATA LAYER</span>
           <div class="stack-title">LOCAL STORAGE</div>
-          <div class="stack-text">Bewaart AP-profielen, verrijkte scanresultaten en andere demo-data lokaal voor een bruikbare workflow.</div>
+          <div class="stack-text">Stores AP profiles, enriched scan results, and other demo data locally for a usable workflow.</div>
         </div>
         <div class="stack-card">
           <span class="stack-type">AI LAYER</span>
           <div class="stack-title">OLLAMA</div>
-          <div class="stack-text">Genereert korte speelhints op basis van gekozen game, genre en moeilijkheidsgraad.</div>
+          <div class="stack-text">Generates short gameplay hints based on the selected title, genre, and difficulty.</div>
         </div>
       </div>
     </section>
@@ -309,48 +324,48 @@
       <div class="section-label">◈ AI &amp; FUTURE EXPANSION</div>
       <div class="split-grid">
         <div>
-          <p class="card-text">AI zit bewust als ondersteunende laag in het project en niet als gimmick. Tijdens het spelen kan het platform korte, contextuele hints genereren, zodat klassieke games interactiever en beter begeleid worden zonder de flow te verstoren.</p>
-          <p class="card-text">De architectuur is tegelijk open genoeg om later verder te groeien. Dezelfde logica kan evolueren richting hybride of cloudgebaseerde runtime, realtime multiplayer sessies en veilig geisoleerde cyber challenges die passen binnen een groter arcade-ecosysteem.</p>
+          <p class="card-text">AI is intentionally positioned as a support layer rather than a gimmick. During play, the platform can generate short contextual hints that make classic software more interactive without breaking the flow.</p>
+          <p class="card-text">The architecture is also open enough to grow further. The same logic can evolve toward hybrid or cloud-backed runtime models, real-time multiplayer sessions, and safely isolated cyber challenges that fit a larger arcade ecosystem.</p>
         </div>
         <div class="capability-grid">
           <div class="capability-card">
             <span class="capability-label">CURRENT USE</span>
-            <div class="capability-text">Lokale hints via Ollama op basis van gamecontext en moeilijkheid.</div>
+            <div class="capability-text">Local hints through Ollama based on game context and difficulty.</div>
           </div>
           <div class="capability-card">
             <span class="capability-label">HYBRID READY</span>
-            <div class="capability-text">De AI-laag kan later ook via cloud- of GCP-achtige infrastructuur uitbreiden.</div>
+            <div class="capability-text">The AI layer can later expand through cloud or GCP-style infrastructure.</div>
           </div>
           <div class="capability-card">
             <span class="capability-label">REALTIME VISION</span>
-            <div class="capability-text">Toekomstige multiplayer flows en synchronisatie passen logisch binnen de huidige opbouw.</div>
+            <div class="capability-text">Future multiplayer flows and synchronization fit naturally into the current structure.</div>
           </div>
           <div class="capability-card">
             <span class="capability-label">SANDBOXING</span>
-            <div class="capability-text">Cyber challenges blijven bedoeld als gecontroleerde en geisoleerde leeromgevingen.</div>
+            <div class="capability-text">Cyber challenges remain intended for controlled and isolated learning environments.</div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="card" data-reveal>
-      <div class="section-label">◈ CONTEXT &amp; WAARDE</div>
+      <div class="section-label">◈ CONTEXT &amp; VALUE</div>
       <div class="list-grid">
         <div class="list-item">
           <span class="list-mark">01</span>
-          <div class="list-text">De security- en netwerkgerichte onderdelen zijn bedoeld voor gecontroleerde, geautoriseerde demo- en labomgevingen. Het project is expliciet geen platform voor gebruik buiten toegelaten context.</div>
+          <div class="list-text">The security and network-oriented features are intended for controlled, authorized demo and lab environments. The project is explicitly not designed for use outside a permitted context.</div>
         </div>
         <div class="list-item">
           <span class="list-mark">02</span>
-          <div class="list-text">Wat het project sterk maakt, is de combinatie van disciplines: frontend, desktop orchestration, embedded firmware, fysieke interactie en AI komen samen in een tastbare installatie.</div>
+          <div class="list-text">What makes the project strong is the combination of disciplines: frontend, desktop orchestration, embedded firmware, physical interaction, and AI meet in one tangible installation.</div>
         </div>
         <div class="list-item">
           <span class="list-mark">03</span>
-          <div class="list-text">De huidige versie toont al een werkende combinatie van launcher, lokale games, hardware bridge en hintlaag. Daardoor voelt het project speels in vorm, maar degelijk in opbouw.</div>
+          <div class="list-text">The current version already demonstrates a working combination of launcher, local games, hardware bridge, and hint layer. It feels playful in form, but solid in structure.</div>
         </div>
         <div class="list-item">
           <span class="list-mark">04</span>
-          <div class="list-text">In de langetermijnvisie schuift het platform op richting een uitgebreider multiplayer arcade-ecosysteem met realtime synchronisatie, cloudondersteuning en sandboxed challenges.</div>
+          <div class="list-text">In the long-term vision, the platform evolves toward a broader multiplayer arcade ecosystem with real-time synchronization, cloud support, and sandboxed challenges.</div>
         </div>
       </div>
     </section>
@@ -360,7 +375,7 @@
         <span class="nav-icon">◈</span>
         <div class="nav-body">
           <div class="nav-title">HOME</div>
-          <div class="nav-desc">Terug naar de homepagina met snelle overview van beide modes.</div>
+          <div class="nav-desc">Back to the homepage with a quick overview of both modes.</div>
         </div>
         <span class="nav-arrow">→</span>
       </a>
@@ -368,15 +383,15 @@
         <span class="nav-icon">◉</span>
         <div class="nav-body">
           <div class="nav-title">TEAM</div>
-          <div class="nav-desc">Bekijk de teamrollen achter design, code, hardware en demo flow.</div>
+          <div class="nav-desc">Meet the team behind the design, code, hardware, and demo flow.</div>
         </div>
         <span class="nav-arrow">→</span>
       </a>
       <a href="materiaal.html" class="nav-card">
         <span class="nav-icon">◧</span>
         <div class="nav-body">
-          <div class="nav-title">MATERIAAL</div>
-          <div class="nav-desc">Open video, artikel, slides en bronmateriaal van het project.</div>
+          <div class="nav-title">MATERIALS</div>
+          <div class="nav-desc">Open the video, article, slides, and source material for the project.</div>
         </div>
         <span class="nav-arrow">→</span>
       </a>
