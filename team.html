@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>THE ARCADERS - Team</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="theme.css" />
 </head>
 <body>
@@ -23,7 +23,7 @@
 
   <section class="hero">
     <div class="hero-glow"></div>
-    <img class="hero-logo" src="thearcaders_logo_cropped.png" alt="The Arcaders" />
+    <img class="hero-logo" src="assets/thearcaders_logo_cropped.png" alt="The Arcaders" />
     <div class="hero-sub">◆ PLAYER SELECT ◆ TEAM ROSTER ◆</div>
     <div class="hero-badges">
       <span class="badge">3 PLAYERS</span>
@@ -71,11 +71,11 @@
       </div>
       <div class="stat-cell">
         <span class="stat-num">1</span>
-        <span class="stat-label">TEAM BUILD</span>
+        <span class="stat-label">SHARED BUILD</span>
       </div>
       <div class="stat-cell">
-        <span class="stat-num">2</span>
-        <span class="stat-label">DISCIPLINES</span>
+        <span class="stat-num">3</span>
+        <span class="stat-label">CORE ROLES</span>
       </div>
       <div class="stat-cell">
         <span class="stat-num">2026</span>
@@ -85,60 +85,66 @@
 
     <section class="card" data-reveal>
       <div class="section-label">◈ TEAM INTRO</div>
-      <p class="card-text">These cards keep the same visual language as the homepage, but give each teammate room for a clearer profile, role and call-to-action.</p>
-      <p class="card-text">The names and LinkedIn URLs are still placeholders, so you can replace them later without touching the layout.</p>
+      <p class="card-text">The Arcaders is built as a shared platform project where UI, desktop orchestration, hardware integration and cyber-lab thinking all meet in one cabinet experience.</p>
+      <p class="card-text">Deze pagina maakt de rolverdeling concreet: Younes trekt platform en interface, Rayan focust de hardwarekant en Matthias bewaakt de cybersec- en lablaag van Guppy.</p>
     </section>
 
     <section class="profile-grid" data-reveal>
       <article class="profile-card">
         <div class="profile-head">
-          <div class="profile-avatar">P1</div>
+          <div class="profile-avatar profile-avatar-photo">
+            <img src="assets/younes.jpeg" alt="Younes El Azzouzi" class="profile-avatar-image" />
+          </div>
           <div>
-            <div class="profile-name">TEAMLID 1</div>
-            <div class="profile-role">Lead build / frontend / presentatie</div>
+            <div class="profile-name">Younes El Azzouzi</div>
+            <div class="profile-role">Platform engineer / UI design</div>
           </div>
         </div>
-        <p class="profile-text">Gebruik deze kaart voor de persoon die het verhaal van de cabinet en de algemene flow van de demo draagt.</p>
+        <p class="profile-text">Younes stuurt de platformlaag en de ervaring van de interface aan: van desktopflow en frontend orchestration tot de retro visuele richting van de cabinet.</p>
         <div class="tag-row">
-          <span class="tag">UI FLOW</span>
-          <span class="tag">SHOWCASE</span>
-          <span class="tag">PRESENTATION</span>
+          <span class="tag">PLATFORM</span>
+          <span class="tag">UI DESIGN</span>
+          <span class="tag">ELECTRON FLOW</span>
         </div>
-        <a href="https://linkedin.com/in/VERVANG" target="_blank" rel="noopener" class="resource-link">LINKEDIN ↗</a>
+        <a href="https://www.linkedin.com/in/youneselazzouzi" target="_blank" rel="noopener" class="resource-link">LINKEDIN ↗</a>
       </article>
 
       <article class="profile-card">
         <div class="profile-head">
-          <div class="profile-avatar">P2</div>
+          <div class="profile-avatar profile-avatar-photo">
+            <img src="assets/rayan.jpeg" alt="Rayan Boufker" class="profile-avatar-image" />
+          </div>
           <div>
-            <div class="profile-name">TEAMLID 2</div>
-            <div class="profile-role">Software / logic / integrations</div>
+            <div class="profile-name">Rayan Boufker</div>
+            <div class="profile-role">Hardware specialist</div>
           </div>
         </div>
-        <p class="profile-text">Gebruik deze kaart voor de persoon die de applicatielogica, state management en koppelingen tussen modules uitlegt.</p>
-        <div class="tag-row">
-          <span class="tag">REACT</span>
-          <span class="tag">LOGIC</span>
-          <span class="tag">INTEGRATION</span>
-        </div>
-        <a href="https://linkedin.com/in/VERVANG" target="_blank" rel="noopener" class="resource-link">LINKEDIN ↗</a>
-      </article>
-
-      <article class="profile-card">
-        <div class="profile-head">
-          <div class="profile-avatar">P3</div>
-          <div>
-            <div class="profile-name">TEAMLID 3</div>
-            <div class="profile-role">Hardware / testing / system setup</div>
-          </div>
-        </div>
-        <p class="profile-text">Gebruik deze kaart voor de persoon die de fysieke cabinet, randapparatuur en demo-opstelling aan elkaar houdt.</p>
+        <p class="profile-text">Rayan bouwt en koppelt de fysieke laag van het project: de DIY hardware, de brug naar externe modules en de praktische integratie van de cabinet setup.</p>
         <div class="tag-row">
           <span class="tag">HARDWARE</span>
-          <span class="tag">TESTING</span>
-          <span class="tag">SETUP</span>
+          <span class="tag">ESP32</span>
+          <span class="tag">PROTOTYPING</span>
         </div>
-        <a href="https://linkedin.com/in/VERVANG" target="_blank" rel="noopener" class="resource-link">LINKEDIN ↗</a>
+        <a href="https://www.linkedin.com/in/rayan-boufker-657b2b168/" target="_blank" rel="noopener" class="resource-link">LINKEDIN ↗</a>
+      </article>
+
+      <article class="profile-card">
+        <div class="profile-head">
+          <div class="profile-avatar profile-avatar-photo">
+            <img src="assets/matthias.jpeg" alt="Matthias Adriaenssen" class="profile-avatar-image" />
+          </div>
+          <div>
+            <div class="profile-name">Matthias Adriaenssen</div>
+            <div class="profile-role">Cybersec expert</div>
+          </div>
+        </div>
+        <p class="profile-text">Matthias focust de security- en labcontext van Guppy, met aandacht voor wireless tooling, demo safety en de technische geloofwaardigheid van de hacker mode.</p>
+        <div class="tag-row">
+          <span class="tag">CYBERSEC</span>
+          <span class="tag">WIFI / IR</span>
+          <span class="tag">LAB FLOW</span>
+        </div>
+        <a href="https://www.linkedin.com/in/matthias-adriaenssen-aa9477317/" target="_blank" rel="noopener" class="resource-link">LINKEDIN ↗</a>
       </article>
     </section>
 
@@ -147,19 +153,19 @@
       <div class="list-grid">
         <div class="list-item">
           <div class="list-mark">01</div>
-          <div class="list-text">One visual direction across site, cabinet and presentation so the project feels like one product.</div>
+          <div class="list-text">Platform en UI worden centraal bewaakt zodat site, cabinet en live demo als eenzelfde product aanvoelen.</div>
         </div>
         <div class="list-item">
           <div class="list-mark">02</div>
-          <div class="list-text">A split between software and hardware so the live demo stays stable and each feature has a clear owner.</div>
+          <div class="list-text">De hardwarelaag krijgt een duidelijke owner, zodat firmware, bridge-setup en fysieke modules stabiel in de demo zitten.</div>
         </div>
         <div class="list-item">
           <div class="list-mark">03</div>
-          <div class="list-text">Short demo flows and a consistent explanation layer so visitors can understand the concept quickly.</div>
+          <div class="list-text">De cyber- en toolingkant blijft gekoppeld aan een gecontroleerde labcontext, zodat Guppy sterk maar verantwoord gepresenteerd wordt.</div>
         </div>
         <div class="list-item">
           <div class="list-mark">04</div>
-          <div class="list-text">Shared materials page for slides, article, video and repo links during the conference.</div>
+          <div class="list-text">Door die rolverdeling kan het team tegelijk spelen, uitleggen, debuggen en demonstreren zonder de flow van de cabinet te verliezen.</div>
         </div>
       </div>
     </section>
@@ -169,7 +175,7 @@
         <span class="nav-icon">◈</span>
         <div class="nav-body">
           <div class="nav-title">HOME</div>
-          <div class="nav-desc">Return to the event overview.</div>
+          <div class="nav-desc">Terug naar de homepagina en de snelle projectintro.</div>
         </div>
         <span class="nav-arrow">→</span>
       </a>
@@ -177,7 +183,7 @@
         <span class="nav-icon">◉</span>
         <div class="nav-body">
           <div class="nav-title">PROJECT</div>
-          <div class="nav-desc">See the cabinet modules and tech stack.</div>
+          <div class="nav-desc">Bekijk de arcadeflow, Guppy mode en de technische architectuur.</div>
         </div>
         <span class="nav-arrow">→</span>
       </a>
@@ -185,7 +191,7 @@
         <span class="nav-icon">◧</span>
         <div class="nav-body">
           <div class="nav-title">MATERIAAL</div>
-          <div class="nav-desc">Open the media and source links page.</div>
+          <div class="nav-desc">Open video, slides, artikel en andere projectlinks.</div>
         </div>
         <span class="nav-arrow">→</span>
       </a>
