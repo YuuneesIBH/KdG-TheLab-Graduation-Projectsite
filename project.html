@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>THE ARCADERS - Project</title>
+  <meta name="description" content="Project overview for The Arcaders, covering the arcade flow, Guppy lab environment, architecture, and graduation showcase context." />
+  <meta name="theme-color" content="#0d0402" />
+  <link rel="icon" type="image/png" href="assets/thearcaders_logo_cropped.png" />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="theme.css" />
 </head>
@@ -28,12 +31,12 @@
     <div class="hero-badges">
       <span class="badge">11 LOCAL GAMES</span>
       <span class="badge">ESP32 BRIDGE</span>
-      <span class="badge">LOCAL AI HINTS</span>
+      <span class="badge">OLLAMA HINTS</span>
       <span class="badge">ELECTRON + REACT</span>
     </div>
     <div class="hero-copy-panel">
       <p class="hero-lead">The Lab Graduation: Arcade &amp; Hacking Platform combines the atmosphere of a classic retro arcade with the flexibility of an experimental hardware and security platform in one fullscreen desktop experience.</p>
-      <p class="hero-note">The application shifts from a cinematic arcade launcher into a terminal-style Guppy environment that works over USB serial with a DIY ESP32 board, local tools, and an expandable AI layer.</p>
+      <p class="hero-note">The application shifts from a cinematic arcade launcher into a terminal-style Guppy environment that works over USB serial with a DIY ESP32 board, local tools, and a supportive hint layer that runs locally.</p>
       <div class="hero-jumps">
         <a href="#arcade" class="hero-jump">ARCADE FLOW</a>
         <a href="#guppy" class="hero-jump hero-jump-hack">GUPPY MODE</a>
@@ -67,9 +70,9 @@
   <div class="ticker-wrap">
     <div class="ticker-inner">
       <span>ARCADE EXPERIENCE</span><span>GUPPY TERMINAL</span><span>PYTHON / JAVA / NATIVE</span>
-      <span>USB SERIAL</span><span>LOCAL AI HINTS</span><span>ESP32 BRIDGE</span>
+      <span>USB SERIAL</span><span>OLLAMA HINTS</span><span>ESP32 BRIDGE</span>
       <span>ARCADE EXPERIENCE</span><span>GUPPY TERMINAL</span><span>PYTHON / JAVA / NATIVE</span>
-      <span>USB SERIAL</span><span>LOCAL AI HINTS</span><span>ESP32 BRIDGE</span>
+      <span>USB SERIAL</span><span>OLLAMA HINTS</span><span>ESP32 BRIDGE</span>
     </div>
   </div>
 
@@ -84,8 +87,8 @@
         <span class="stat-label">MODES</span>
       </div>
       <div class="stat-cell">
-        <span class="stat-num">AI</span>
-        <span class="stat-label">LOCAL HINTS</span>
+        <span class="stat-num">OLLAMA</span>
+        <span class="stat-label">HINT LAYER</span>
       </div>
       <div class="stat-cell">
         <span class="stat-num">ESP32</span>
@@ -122,8 +125,8 @@
             <span class="detail-value">DIY ESP32 SERIAL BRIDGE</span>
           </div>
           <div class="detail-item">
-            <span class="detail-name">AI LAYER</span>
-            <span class="detail-value">OLLAMA GAME HINTS</span>
+            <span class="detail-name">HINT LAYER</span>
+            <span class="detail-value">LOCAL OLLAMA HINTS</span>
           </div>
           <div class="detail-item">
             <span class="detail-name">LOCAL DATA</span>
@@ -139,8 +142,8 @@
         <p class="card-text article-paragraph">The Lab Graduation: Arcade &amp; Hacking Platform is a hybrid desktop project that deliberately brings together two very different worlds: the emotional pull of a classic retro arcade and the flexibility of an experimental hardware and security platform. Instead of behaving like a simple game launcher, the application treats play as part of a larger interactive installation.</p>
         <p class="card-text article-paragraph">The first layer is the arcade experience. From the moment the platform boots, the interface aims to feel like a real cabinet through fullscreen presentation, CRT-inspired effects, glitch animation, and gamepad-friendly navigation. Users can browse a local game library that already includes eleven built-in titles across Python, Java, and native runtimes, while the launcher keeps that diversity visually consistent inside one shared shell.</p>
         <p class="card-text article-paragraph">What makes the project stand out is Guppy, the second layer. Guppy transforms the same application into a terminal-style control environment that communicates over USB serial with a DIY ESP32-based board. From there, the system can expose functions such as IR commands, Wi-Fi scans, audit information, and access-point management while adapting the interface to the capabilities reported by the connected firmware.</p>
-        <p class="card-text article-paragraph">An AI layer extends the platform without taking focus away from the core experience. During gameplay, the system can generate short contextual hints through Ollama based on the selected title, genre, and difficulty. The same architectural direction can later evolve toward hybrid or cloud-backed orchestration, real-time multiplayer sessions, and sandboxed cyber challenges.</p>
-        <p class="card-text article-paragraph">Taken together, the project demonstrates interdisciplinary building in a practical and visible way. Frontend design, desktop orchestration, embedded hardware, local tooling, and AI-assisted interaction all meet inside one coherent cabinet experience. Security-oriented features remain intended for controlled, authorized demo or lab environments only.</p>
+        <p class="card-text article-paragraph">A local hint layer extends the platform without taking focus away from the core experience. During gameplay, the system can generate short contextual hints through Ollama based on the selected title, genre, and difficulty. That keeps the feature practical and visible while still serving the cabinet flow instead of competing with it.</p>
+        <p class="card-text article-paragraph">Taken together, the project demonstrates interdisciplinary building in a practical and visible way. Frontend design, desktop orchestration, embedded hardware, local tooling, and contextual guidance all meet inside one coherent cabinet experience. Security-oriented features remain intended for controlled, authorized demo or lab environments only.</p>
       </div>
       <div class="page-actions">
         <a href="materiaal.html" class="page-link">VIEW ALL MATERIALS ↗</a>
@@ -163,7 +166,7 @@
           <a href="#arcade" class="preview-link">OPEN ARCADE FLOW →</a>
         </article>
         <article class="mode-card guppy-mode">
-          <span class="mode-kicker">LAB / HACKER FLOW</span>
+          <span class="mode-kicker">LAB / TECH FLOW</span>
           <h2 class="mode-title">Guppy Terminal</h2>
           <p class="mode-text">Guppy turns the same application into a terminal-like interface for hardware interaction. Over USB serial, the desktop layer connects to a DIY board, reads capabilities from the firmware, and only exposes features that the connected device actually supports.</p>
           <div class="mode-chip-row">
@@ -195,7 +198,7 @@
             <div class="display-status">
               <span>CRT FX</span>
               <span>GAMEPAD ONLINE</span>
-              <span>AI HINTS READY</span>
+              <span>HINT LAYER READY</span>
             </div>
           </div>
         </div>
@@ -226,7 +229,7 @@
     </section>
 
     <section class="card" id="guppy" data-reveal>
-      <div class="section-label">◈ GUPPY HACKER MODE</div>
+      <div class="section-label">◈ GUPPY LAB MODE</div>
       <div class="preview-grid">
         <div class="preview-pane display-pane">
           <div class="display-shell display-guppy">
@@ -313,7 +316,7 @@
           <div class="stack-text">Stores AP profiles, enriched scan results, and other demo data locally for a usable workflow.</div>
         </div>
         <div class="stack-card">
-          <span class="stack-type">AI LAYER</span>
+          <span class="stack-type">HINT LAYER</span>
           <div class="stack-title">OLLAMA</div>
           <div class="stack-text">Generates short gameplay hints based on the selected title, genre, and difficulty.</div>
         </div>
@@ -321,11 +324,11 @@
     </section>
 
     <section class="card" data-reveal>
-      <div class="section-label">◈ AI &amp; FUTURE EXPANSION</div>
+      <div class="section-label">◈ HINT LAYER &amp; EXTENSIBILITY</div>
       <div class="split-grid">
         <div>
-          <p class="card-text">AI is intentionally positioned as a support layer rather than a gimmick. During play, the platform can generate short contextual hints that make classic software more interactive without breaking the flow.</p>
-          <p class="card-text">The architecture is also open enough to grow further. The same logic can evolve toward hybrid or cloud-backed runtime models, real-time multiplayer sessions, and safely isolated cyber challenges that fit a larger arcade ecosystem.</p>
+          <p class="card-text">The hint layer is deliberately supportive rather than dominant. During play, the platform can generate short contextual hints that make classic software more approachable without breaking the cabinet rhythm.</p>
+          <p class="card-text">The architecture is also open enough to grow with the project. Additional guidance flows, synchronized sessions, or connected services can be added later without changing the core split between arcade and Guppy.</p>
         </div>
         <div class="capability-grid">
           <div class="capability-card">
@@ -333,16 +336,16 @@
             <div class="capability-text">Local hints through Ollama based on game context and difficulty.</div>
           </div>
           <div class="capability-card">
-            <span class="capability-label">HYBRID READY</span>
-            <div class="capability-text">The AI layer can later expand through cloud or GCP-style infrastructure.</div>
+            <span class="capability-label">EXTENSIBLE SETUP</span>
+            <div class="capability-text">The same interface can later support richer guidance or connected services if the project grows beyond the local demo.</div>
           </div>
           <div class="capability-card">
-            <span class="capability-label">REALTIME VISION</span>
-            <div class="capability-text">Future multiplayer flows and synchronization fit naturally into the current structure.</div>
+            <span class="capability-label">NEXT STEPS</span>
+            <div class="capability-text">Future multiplayer flows and synchronized demo moments fit naturally into the current structure.</div>
           </div>
           <div class="capability-card">
-            <span class="capability-label">SANDBOXING</span>
-            <div class="capability-text">Cyber challenges remain intended for controlled and isolated learning environments.</div>
+            <span class="capability-label">SAFE CONTEXT</span>
+            <div class="capability-text">Security-oriented features remain limited to controlled and isolated learning environments.</div>
           </div>
         </div>
       </div>
@@ -357,7 +360,7 @@
         </div>
         <div class="list-item">
           <span class="list-mark">02</span>
-          <div class="list-text">What makes the project strong is the combination of disciplines: frontend, desktop orchestration, embedded firmware, physical interaction, and AI meet in one tangible installation.</div>
+          <div class="list-text">What makes the project strong is the combination of disciplines: frontend, desktop orchestration, embedded firmware, physical interaction, and a local hint layer meet in one tangible installation.</div>
         </div>
         <div class="list-item">
           <span class="list-mark">03</span>
@@ -365,7 +368,7 @@
         </div>
         <div class="list-item">
           <span class="list-mark">04</span>
-          <div class="list-text">In the long-term vision, the platform evolves toward a broader multiplayer arcade ecosystem with real-time synchronization, cloud support, and sandboxed challenges.</div>
+          <div class="list-text">In the longer-term vision, the platform can evolve toward a broader arcade ecosystem with synchronized sessions, richer demo tooling, and room for new cabinet experiences.</div>
         </div>
       </div>
     </section>
@@ -399,7 +402,7 @@
   </main>
 
   <footer>
-    The Arcaders &nbsp;·&nbsp; Conference 2026 &nbsp;·&nbsp; <em>INSERT COIN</em>
+    The Arcaders &nbsp;·&nbsp; Graduation Conference 2026 &nbsp;·&nbsp; <em>KdG Campus Groenplaats</em>
   </footer>
 
   <script src="theme.js"></script>

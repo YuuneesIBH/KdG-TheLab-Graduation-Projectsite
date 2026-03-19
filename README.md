@@ -1,93 +1,88 @@
-# THE ARCADERS - Conference Website
+# THE ARCADERS
 
-> Conference project website for The Arcaders - a retro arcade cabinet built with Electron, React & TypeScript.
-> Hosted via GitLab Pages.
+> Projectsite voor de graduation conference van **The Arcaders**.  
+> Deze repository bevat de publieke website, niet de volledige desktopapplicatie zelf.
 
----
+## 🎓 Projectcontext
 
-## Overview
+**The Arcaders** is een graduation project dat twee werelden samenbrengt in één totaalervaring:
 
-**The Arcaders** is a team project presented at the 2026 conference. This static multipage website gives visitors a quick overview of the project, the team behind it, and links to all related materials.
+- een retro arcade launcher met lokale games en cabinet-feel
+- een Guppy lab-omgeving voor hardware, tooling en live demo-interactie
 
-The site uses a shared retro CRT visual style across the homepage, project page, team page and materials page, with a consistent event header on each page.
+De website is bedoeld als compacte publieks- en jurysite voor de conference. Ze legt uit wat het project is, wie eraan gewerkt heeft, hoe de opbouw in elkaar zit en waar de relevante materialen terug te vinden zijn.
 
----
+## 📅 Praktische info
 
-## Repository Structure
+- **Event:** Graduation Conference
+- **Datum:** 26 maart 2026
+- **Locatie:** KdG Campus Groenplaats
+- **Lokaal:** GR 211
+- **Laatste README-update:** 19 maart 2026
 
-```
+## 🕹️ Waarom deze site bestaat
+
+- Bezoekers in enkele seconden laten begrijpen wat The Arcaders precies is
+- Het verschil tonen tussen de arcade-ervaring en Guppy als technische labmodus
+- De rolverdeling binnen het team helder voorstellen
+- Artikels, broncode en andere projectmaterialen op één plaats bundelen
+
+## 🧱 Wat zit er in deze repo?
+
+Dit is een **statische multipage website** zonder build step of dependencies. De site bestaat uit losse HTML-pagina's met één gedeeld stylesheet en één gedeeld JavaScript-bestand.
+
+```text
 /
-├── index.html                     # Homepage
-├── project.html                   # Project breakdown
-├── team.html                      # Team page
-├── materiaal.html                 # Materials page
-├── theme.css                      # Shared styling
-├── theme.js                       # Shared animations / interactions
-├── assets/                        # Logo and profile images
+├── index.html
+├── project.html
+├── team.html
+├── materiaal.html
+├── theme.css
+├── theme.js
+├── assets/
 └── README.md
 ```
 
-### Pages
+## 📄 Pagina-overzicht
 
-```
-HOME        Landing page with event details and previews
-PROJECT     Modules, concept and stack
-TEAM        Team cards and role overview
-MATERIAAL   Video, article, slides and source links
-```
+| Pagina | Doel |
+|---|---|
+| `index.html` | Landing page met korte projectintro, eventinformatie en navigatie |
+| `project.html` | Uitgebreide uitleg over concept, opbouw, arcade flow en Guppy |
+| `team.html` | Teamvoorstelling en rolverdeling |
+| `materiaal.html` | Publieke materialen zoals artikel, broncode, video en slides |
 
----
+## 🎨 Stijl en technische keuzes
 
-## Updating Content
+| Onderdeel | Keuze |
+|---|---|
+| Structuur | HTML5 |
+| Styling | CSS3 met custom properties, gradients en animaties |
+| Interactie | Vanilla JavaScript |
+| Fonts | Press Start 2P en Share Tech Mono |
+| Visuele richting | Retro arcade / CRT sfeer |
+| Hosting | GitLab Pages |
 
-Shared styling lives in `theme.css`, shared interactions live in `theme.js`, and page content lives in the individual HTML files. Search for the `VERVANG` placeholder to find the team links that still need real data.
+## ✏️ Inhoud aanpassen
 
-### Team cards
+- Pas pagina-inhoud aan in de afzonderlijke HTML-bestanden.
+- Beheer gedeelde styling in `theme.css`.
+- Beheer gedeelde animaties en reveal-interactie in `theme.js`.
+- Voeg nieuwe afbeeldingen of exports toe in `assets/`.
 
-Compact cards on the homepage look like this:
+## 🚀 Lokaal bekijken
 
-```html
-<a href="https://linkedin.com/in/VERVANG" target="_blank" rel="noopener" class="player-mini">
-  <div class="mini-avatar">P1</div>
-  <div class="mini-name">TEAMLID 1</div>
-  <div class="mini-role">Rol / specialisatie</div>
-  <span class="mini-li">LINKEDIN ↗</span>
-</a>
-```
+Open `index.html` rechtstreeks in je browser, of start lokaal een eenvoudige server:
 
-Replace `VERVANG` with the LinkedIn slug, `TEAMLID 1` with the real name, `P1` with initials, and `Rol / specialisatie` with the actual role. The same placeholders also appear on `team.html`.
-
-### Material links
-
-Find the four resource cards in `materiaal.html`:
-
-```html
-<!-- Replace # with real URL when available -->
-<a href="#" class="resource-link">
-
-<!-- Repo link -->
-<a href="#" class="resource-link">
+```bash
+python3 -m http.server 8000
 ```
 
-Once a link is live, also remove the `COMING SOON` badge from that card:
+Open daarna `http://localhost:8000`.
 
-```html
-<!-- Remove this line when the link is ready -->
-<span class="resource-soon">COMING SOON</span>
-```
+## 🌐 Deployen via GitLab Pages
 
----
-
-## Deployment
-
-### Requirements
-
-- A GitLab repository with `main` as the default branch
-- Pages visibility set to **Public** under **Settings > General > Visibility**
-
-### Pipeline config
-
-Create `.gitlab-ci.yml` in the repo root:
+Voor deze repo volstaat een eenvoudige Pages-pipeline die de statische bestanden naar `public/` kopieert.
 
 ```yaml
 create-pages:
@@ -109,43 +104,16 @@ create-pages:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
 ```
 
-### Deploy
+Na een push naar de standaardbranch wordt de site automatisch gepubliceerd via GitLab Pages.
 
-```bash
-git add .
-git commit -m "deploy: conference website"
-git push origin main
-```
+## 👥 Team
 
-The pipeline runs automatically. After roughly one minute the site is live at:
-
-```
-https://<namespace>.gitlab.io/<repository-name>
-```
-
----
-
-## Stack
-
-| Layer | Technology |
-|---|---|
-| Markup | HTML5 |
-| Styling | CSS3 - custom properties, keyframe animations |
-| Logic | Vanilla JavaScript - no build step, no dependencies |
-| Fonts | Press Start 2P · Share Tech Mono (Google Fonts) |
-| Loader | Pac-Man animation — uiverse.io / JkHuger |
-| Hosting | GitLab Pages |
-
----
-
-## Team
-
-| Player | Name | Role |
+| Speler | Naam | Verantwoordelijkheid |
 |---|---|---|
-| P1 | — | — |
-| P2 | — | — |
-| P3 | — | — |
+| Player 1 | Younes El Azzouzi | Platform engineering en UI design |
+| Player 2 | Rayan Boufker | Hardware en ESP32-integratie |
+| Player 3 | Matthias Adriaenssen | Security- en labcontext van Guppy |
 
----
+## 🔗 Opmerking
 
-*The Arcaders · Conference 2026 · INSERT COIN*
+Deze repository bevat de **projectsite**. De broncode van de bredere Arcade &amp; Guppy applicatie staat gelinkt op de materials-pagina van de website zelf.

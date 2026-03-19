@@ -87,14 +87,3 @@
 
   revealEls.forEach((el) => observer.observe(el));
 })();
-
-(function () {
-  const scoreEl = document.getElementById("s-score");
-  if (!scoreEl) return;
-
-  let score = 0;
-  window.setInterval(() => {
-    score += Math.floor(Math.random() * 420 + 60);
-    scoreEl.textContent = String(score).padStart(6, "0");
-  }, 1100);
-})();
