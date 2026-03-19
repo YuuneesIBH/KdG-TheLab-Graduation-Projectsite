@@ -1392,6 +1392,12 @@ body::before {
   margin-top: 22px;
 }
 
+.tag-row {
+  column-gap: 12px;
+  row-gap: 14px;
+  margin-top: 6px;
+}
+
 .profile-grid {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -1448,6 +1454,10 @@ body::before {
 
 .profile-text {
   margin-bottom: 14px;
+}
+
+.profile-card .resource-link {
+  margin-top: 14px;
 }
 
 .resource-grid {
