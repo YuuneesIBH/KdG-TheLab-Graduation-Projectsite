@@ -3,6 +3,15 @@
 > Graduation conference website for **The Arcaders**  
 > This repository contains the public-facing project site, not the full desktop application.
 
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=111111)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![GitLab Pages](https://img.shields.io/badge/GitLab%20Pages-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)](https://docs.gitlab.com/user/project/pages/)
+[![Source Code](https://img.shields.io/badge/Source%20Code-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YuuneesIBH/KdG-TheLab-Graduation-AI-GCP-Arcade-HackingPlatform)
+
+**Direct source code repository:**  
+[KdG-TheLab-Graduation-AI-GCP-Arcade-HackingPlatform](https://github.com/YuuneesIBH/KdG-TheLab-Graduation-AI-GCP-Arcade-HackingPlatform)
+
 ---
 
 ## ◆ Project Overview
@@ -79,6 +88,21 @@ This is a **static multipage website** with no build step and no external runtim
 
 ---
 
+## ▸ Related Project Stack
+
+The public website in this repository supports a broader project ecosystem. The main Arcade &amp; Guppy platform is built and documented in the linked source repository.
+
+[![Electron](https://img.shields.io/badge/Electron-47848F?style=flat-square&logo=electron&logoColor=white)](https://www.electronjs.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![ESP32](https://img.shields.io/badge/ESP32-333333?style=flat-square&logo=esphome&logoColor=white)](https://www.espressif.com/en/products/socs/esp32)
+[![Ollama](https://img.shields.io/badge/Ollama-111111?style=flat-square&logo=ollama&logoColor=white)](https://ollama.com/)
+
+**Main platform repository:**  
+[github.com/YuuneesIBH/KdG-TheLab-Graduation-AI-GCP-Arcade-HackingPlatform](https://github.com/YuuneesIBH/KdG-TheLab-Graduation-AI-GCP-Arcade-HackingPlatform)
+
+---
+
 ## ▸ Editing Content
 
 - Update page content directly in the individual HTML files
@@ -140,4 +164,6 @@ After pushing to the default branch, the site is published automatically through
 
 ## ▸ Note
 
-This repository contains the **project website**. The source code for the broader Arcade &amp; Guppy platform is linked from the materials page on the site itself.
+This repository contains the **project website**. The full Arcade &amp; Guppy platform source code is available directly here:
+
+[KdG-TheLab-Graduation-AI-GCP-Arcade-HackingPlatform](https://github.com/YuuneesIBH/KdG-TheLab-Graduation-AI-GCP-Arcade-HackingPlatform)

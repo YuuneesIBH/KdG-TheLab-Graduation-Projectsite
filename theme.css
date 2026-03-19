@@ -1260,6 +1260,49 @@ body::before {
   max-width: 72ch;
 }
 
+.article-question {
+  max-width: 72ch;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 160, 0, 0.3);
+  background: linear-gradient(180deg, rgba(24, 8, 2, 0.95), rgba(10, 3, 0, 0.98));
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.75;
+  box-shadow: inset 0 0 0 1px rgba(255, 140, 0, 0.06);
+}
+
+.article-heading {
+  max-width: 72ch;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  line-height: 1.9;
+  letter-spacing: 2px;
+  color: var(--gold);
+}
+
+.article-references {
+  max-width: 72ch;
+  padding-left: 22px;
+  display: grid;
+  gap: 10px;
+}
+
+.article-reference {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.article-reference a {
+  color: var(--gold);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.article-reference a:hover {
+  color: #ffe082;
+}
+
 .card-text + .card-text {
   margin-top: 14px;
 }
