@@ -1,35 +1,45 @@
 # THE ARCADERS
 
-> Projectsite voor de graduation conference van **The Arcaders**.  
-> Deze repository bevat de publieke website, niet de volledige desktopapplicatie zelf.
+> Graduation conference website for **The Arcaders**  
+> This repository contains the public-facing project site, not the full desktop application.
 
-## 🎓 Projectcontext
+---
 
-**The Arcaders** is een graduation project dat twee werelden samenbrengt in één totaalervaring:
+## ◆ Project Overview
 
-- een retro arcade launcher met lokale games en cabinet-feel
-- een Guppy lab-omgeving voor hardware, tooling en live demo-interactie
+**The Arcaders** is a graduation project that brings two distinct experiences together inside one concept:
 
-De website is bedoeld als compacte publieks- en jurysite voor de conference. Ze legt uit wat het project is, wie eraan gewerkt heeft, hoe de opbouw in elkaar zit en waar de relevante materialen terug te vinden zijn.
+- `ARCADE MODE` - a retro-inspired launcher with local games, cabinet atmosphere, and a unified visual identity
+- `GUPPY MODE` - a lab-oriented environment for hardware interaction, tooling, and controlled live demo workflows
 
-## 📅 Praktische info
+This website exists as the public presentation layer of the project. It gives visitors, jurors, and conference attendees a fast overview of the concept, the team, the technical structure, and the available project materials.
 
-- **Event:** Graduation Conference
-- **Datum:** 26 maart 2026
-- **Locatie:** KdG Campus Groenplaats
-- **Lokaal:** GR 211
-- **Laatste README-update:** 19 maart 2026
+---
 
-## 🕹️ Waarom deze site bestaat
+## ◈ Event Details
 
-- Bezoekers in enkele seconden laten begrijpen wat The Arcaders precies is
-- Het verschil tonen tussen de arcade-ervaring en Guppy als technische labmodus
-- De rolverdeling binnen het team helder voorstellen
-- Artikels, broncode en andere projectmaterialen op één plaats bundelen
+| Item | Information |
+|---|---|
+| `EVENT` | Graduation Conference |
+| `DATE` | 26 March 2026 |
+| `LOCATION` | KdG Campus Groenplaats |
+| `ROOM` | GR 211 |
+| `README UPDATED` | 19 March 2026 |
 
-## 🧱 Wat zit er in deze repo?
+---
 
-Dit is een **statische multipage website** zonder build step of dependencies. De site bestaat uit losse HTML-pagina's met één gedeeld stylesheet en één gedeeld JavaScript-bestand.
+## ▣ Why This Site Exists
+
+- To explain the project clearly within a few seconds
+- To show the split between the arcade experience and the Guppy lab environment
+- To present the team structure in a professional way
+- To centralize the article, source code, and supporting project materials
+
+---
+
+## ▤ Repository Structure
+
+This is a **static multipage website** with no build step and no external runtime dependencies.
 
 ```text
 /
@@ -43,46 +53,56 @@ Dit is een **statische multipage website** zonder build step of dependencies. De
 └── README.md
 ```
 
-## 📄 Pagina-overzicht
+---
 
-| Pagina | Doel |
+## ◇ Page Map
+
+| File | Purpose |
 |---|---|
-| `index.html` | Landing page met korte projectintro, eventinformatie en navigatie |
-| `project.html` | Uitgebreide uitleg over concept, opbouw, arcade flow en Guppy |
-| `team.html` | Teamvoorstelling en rolverdeling |
-| `materiaal.html` | Publieke materialen zoals artikel, broncode, video en slides |
+| `index.html` | Landing page with the project intro, event details, and quick navigation |
+| `project.html` | Full project explanation, architecture, arcade flow, and Guppy mode |
+| `team.html` | Team presentation and role split |
+| `materiaal.html` | Public project materials such as the article, source code, video, and slides |
 
-## 🎨 Stijl en technische keuzes
+---
 
-| Onderdeel | Keuze |
+## ▦ Design And Stack
+
+| Layer | Choice |
 |---|---|
-| Structuur | HTML5 |
-| Styling | CSS3 met custom properties, gradients en animaties |
-| Interactie | Vanilla JavaScript |
-| Fonts | Press Start 2P en Share Tech Mono |
-| Visuele richting | Retro arcade / CRT sfeer |
-| Hosting | GitLab Pages |
+| `MARKUP` | HTML5 |
+| `STYLING` | CSS3 with custom properties, gradients, and animations |
+| `INTERACTION` | Vanilla JavaScript |
+| `TYPOGRAPHY` | Press Start 2P and Share Tech Mono |
+| `VISUAL DIRECTION` | Retro arcade / CRT-inspired presentation |
+| `HOSTING` | GitLab Pages |
 
-## ✏️ Inhoud aanpassen
+---
 
-- Pas pagina-inhoud aan in de afzonderlijke HTML-bestanden.
-- Beheer gedeelde styling in `theme.css`.
-- Beheer gedeelde animaties en reveal-interactie in `theme.js`.
-- Voeg nieuwe afbeeldingen of exports toe in `assets/`.
+## ▸ Editing Content
 
-## 🚀 Lokaal bekijken
+- Update page content directly in the individual HTML files
+- Keep shared styling in `theme.css`
+- Keep shared animations and reveal behavior in `theme.js`
+- Store project images and exports inside `assets/`
 
-Open `index.html` rechtstreeks in je browser, of start lokaal een eenvoudige server:
+---
+
+## ▸ Local Preview
+
+Open `index.html` directly in a browser, or run a small local server:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Open daarna `http://localhost:8000`.
+Then open `http://localhost:8000`.
 
-## 🌐 Deployen via GitLab Pages
+---
 
-Voor deze repo volstaat een eenvoudige Pages-pipeline die de statische bestanden naar `public/` kopieert.
+## ▸ Deployment
+
+For GitLab Pages, a small pipeline that copies the static files into `public/` is enough:
 
 ```yaml
 create-pages:
@@ -104,16 +124,20 @@ create-pages:
     - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
 ```
 
-Na een push naar de standaardbranch wordt de site automatisch gepubliceerd via GitLab Pages.
+After pushing to the default branch, the site is published automatically through GitLab Pages.
 
-## 👥 Team
+---
 
-| Speler | Naam | Verantwoordelijkheid |
+## ▸ Team
+
+| Slot | Name | Responsibility |
 |---|---|---|
-| Player 1 | Younes El Azzouzi | Platform engineering en UI design |
-| Player 2 | Rayan Boufker | Hardware en ESP32-integratie |
-| Player 3 | Matthias Adriaenssen | Security- en labcontext van Guppy |
+| `PLAYER 1` | Younes El Azzouzi | Platform engineering and UI design |
+| `PLAYER 2` | Rayan Boufker | Hardware and ESP32 integration |
+| `PLAYER 3` | Matthias Adriaenssen | Security and lab-oriented Guppy workflows |
 
-## 🔗 Opmerking
+---
 
-Deze repository bevat de **projectsite**. De broncode van de bredere Arcade &amp; Guppy applicatie staat gelinkt op de materials-pagina van de website zelf.
+## ▸ Note
+
+This repository contains the **project website**. The source code for the broader Arcade &amp; Guppy platform is linked from the materials page on the site itself.
