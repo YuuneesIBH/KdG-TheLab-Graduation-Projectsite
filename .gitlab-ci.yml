@@ -6,6 +6,7 @@ create-pages:
     - cp project.html public/
     - cp team.html public/
     - cp materiaal.html public/
+    - cp slides.html public/
     - cp theme.css public/
     - cp theme.js public/
     - cp -R assets public/

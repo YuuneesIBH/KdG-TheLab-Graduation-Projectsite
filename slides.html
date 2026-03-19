@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE ARCADERS - Slides Viewer</title>
+  <meta name="description" content="Embedded PDF viewer for the final The Arcaders graduation presentation deck." />
+  <meta name="theme-color" content="#0d0402" />
+  <link rel="icon" type="image/png" href="assets/thearcaders_logo_cropped.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;family=Share+Tech+Mono&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <canvas id="starfield"></canvas>
+  <div class="fire-base"></div>
+
+  <nav class="topbar">
+    <a href="index.html" class="topbar-logo">THE ARCADERS</a>
+    <div class="topbar-links">
+      <a href="index.html">HOME</a>
+      <a href="project.html">PROJECT</a>
+      <a href="team.html">TEAM</a>
+      <a href="materiaal.html" class="active">MATERIALS</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <img class="hero-logo" src="assets/thearcaders_logo_cropped.png" alt="The Arcaders" />
+    <div class="hero-sub">◆ PRESENTATION DECK ◆ EMBEDDED PDF VIEWER ◆</div>
+    <div class="hero-badges">
+      <span class="badge">SLIDES</span>
+      <span class="badge">PDF</span>
+      <span class="badge">FULL VIEW</span>
+    </div>
+  </section>
+
+  <main class="page page-wide">
+    <section class="card" data-reveal>
+      <div class="section-label">◈ SLIDES VIEWER</div>
+      <p class="card-text">This screen shows the final graduation slides directly on the website. If your browser does not support inline PDF rendering, open or download the file with the actions below.</p>
+      <div class="page-actions">
+        <a href="materiaal.html" class="page-link">BACK TO MATERIALS ←</a>
+        <a href="assets/The%20Lab%20%28Graduation%29%20Final%20Slides%20-%20The%20Lab%20Arcaders.pdf" target="_blank" rel="noopener" class="page-link">OPEN PDF DIRECT ↗</a>
+        <a href="assets/The%20Lab%20%28Graduation%29%20Final%20Slides%20-%20The%20Lab%20Arcaders.pdf" download="The-Arcaders-Graduation-Slides.pdf" class="page-link">DOWNLOAD PDF ↓</a>
+      </div>
+    </section>
+
+    <section class="pdf-viewer-shell" data-reveal aria-label="The Arcaders slides PDF">
+      <iframe
+        class="pdf-frame"
+        src="assets/The%20Lab%20%28Graduation%29%20Final%20Slides%20-%20The%20Lab%20Arcaders.pdf#toolbar=1&amp;navpanes=0&amp;view=FitH"
+        title="The Arcaders graduation presentation PDF"
+      ></iframe>
+    </section>
+  </main>
+
+  <footer>
+    The Arcaders &nbsp;·&nbsp; Graduation Conference 2026 &nbsp;·&nbsp; <em>KdG Campus Groenplaats</em>
+  </footer>
+
+  <script src="theme.js"></script>
+</body>
+</html>
