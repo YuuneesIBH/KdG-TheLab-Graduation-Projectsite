@@ -31,12 +31,12 @@
     <div class="hero-badges">
       <span class="badge">11 LOCAL GAMES</span>
       <span class="badge">ESP32 BRIDGE</span>
-      <span class="badge">OLLAMA HINTS</span>
+      <span class="badge">AI OPPONENT</span>
       <span class="badge">ELECTRON + REACT</span>
     </div>
     <div class="hero-copy-panel">
       <p class="hero-lead">The Lab Graduation: Arcade &amp; Hacking Platform combines the atmosphere of a classic retro arcade with the flexibility of an experimental hardware and security platform in one fullscreen desktop experience.</p>
-      <p class="hero-note">The application shifts from a cinematic arcade launcher into a terminal-style Guppy environment that works over USB serial with a DIY ESP32 board, local tools, and a supportive hint layer that runs locally.</p>
+      <p class="hero-note">The application shifts from a cinematic arcade launcher into a terminal-style Guppy environment that works over USB serial with a DIY ESP32 board, local tools, and a cloud AI layer that is presented as a real opponent during play.</p>
       <div class="hero-jumps">
         <a href="#arcade" class="hero-jump">ARCADE FLOW</a>
         <a href="#guppy" class="hero-jump hero-jump-hack">GUPPY MODE</a>
@@ -56,7 +56,7 @@
         </div>
         <div class="event-item">
           <span class="event-key">TIME</span>
-          <span class="event-value">21:00</span>
+          <span class="event-value">20:30</span>
         </div>
         <div class="event-item">
           <span class="event-key">ROOM</span>
@@ -67,14 +67,14 @@
     </div>
   </section>
 
-  <div class="ticker-wrap">
-    <div class="ticker-inner">
+    <div class="ticker-wrap">
+      <div class="ticker-inner">
       <span>ARCADE EXPERIENCE</span><span>GUPPY TERMINAL</span><span>PYTHON / JAVA / NATIVE</span>
-      <span>USB SERIAL</span><span>OLLAMA HINTS</span><span>ESP32 BRIDGE</span>
+      <span>USB SERIAL</span><span>AI OPPONENT</span><span>ESP32 BRIDGE</span>
       <span>ARCADE EXPERIENCE</span><span>GUPPY TERMINAL</span><span>PYTHON / JAVA / NATIVE</span>
-      <span>USB SERIAL</span><span>OLLAMA HINTS</span><span>ESP32 BRIDGE</span>
+      <span>USB SERIAL</span><span>AI OPPONENT</span><span>ESP32 BRIDGE</span>
+      </div>
     </div>
-  </div>
 
   <main class="page">
     <div class="stats-row" data-reveal>
@@ -87,8 +87,8 @@
         <span class="stat-label">MODES</span>
       </div>
       <div class="stat-cell">
-        <span class="stat-num">OLLAMA</span>
-        <span class="stat-label">HINT LAYER</span>
+        <span class="stat-num">CLOUD</span>
+        <span class="stat-label">AI OPPONENT</span>
       </div>
       <div class="stat-cell">
         <span class="stat-num">ESP32</span>
@@ -125,8 +125,8 @@
             <span class="detail-value">DIY ESP32 SERIAL BRIDGE</span>
           </div>
           <div class="detail-item">
-            <span class="detail-name">HINT LAYER</span>
-            <span class="detail-value">LOCAL OLLAMA HINTS</span>
+            <span class="detail-name">AI LAYER</span>
+            <span class="detail-value">CLOUD AI OPPONENT</span>
           </div>
           <div class="detail-item">
             <span class="detail-name">LOCAL DATA</span>
@@ -158,9 +158,9 @@
         <p class="card-text article-paragraph">The second layer of the project is Guppy Mode, a lab-oriented environment that communicates over USB serial with a self-built ESP32 board (Espressif Systems, n.d.). This mode shows that the same desktop application can also function as a useful environment for hardware interaction, live tooling, and technical demonstration workflows. The application detects the board, reads the capabilities reported by the firmware, and adapts the interface to what the connected device actually supports.</p>
         <p class="card-text article-paragraph">That device-aware approach is a direct answer to the research question. It prevents users from seeing functions that are not available at that moment and makes the technical layer more concrete and reliable. Examples of functionality in Guppy include IR commands, Wi-Fi scans, audit information, and access-point profile management. At the same time, the context remains clearly limited: these security-oriented features are intended only for controlled and authorized demo or learning environments.</p>
 
-        <h3 class="article-heading">Architecture and Local Intelligence</h3>
+        <h3 class="article-heading">Architecture and Cloud Intelligence</h3>
         <p class="card-text article-paragraph">The connection between both modes is supported by a layered architecture. Electron provides the desktop shell and process control (Electron, n.d.), React handles the interface and state transitions (React Team, n.d.), and TypeScript supports the technical structure of the application (Microsoft, n.d.). A preload layer separates the user interface from system-level actions, allowing local games, serial communication, storage, and external processes to be managed centrally without making the interface unnecessarily complex.</p>
-        <p class="card-text article-paragraph">An additional strength is the local hint layer powered by Ollama (Ollama, n.d.). During gameplay, the application can generate short contextual hints based on the selected game, genre, and difficulty. This feature is intentionally supportive rather than dominant. It improves usability without interrupting the arcade flow and also demonstrates how local AI can be integrated into a desktop project in a practical way.</p>
+        <p class="card-text article-paragraph">An additional strength is the cloud AI layer. During gameplay, the platform can react to the selected game, genre, and difficulty and present that layer as a real AI that plays against the user inside the cabinet flow. The intention is not to fall back on the old blanket "game AI" label used for scripted opponents in gaming for decades, but to sell the experience as an actual AI opponent. The implementation still keeps the arcade rhythm readable during a live demo.</p>
 
         <h3 class="article-heading">Conclusion</h3>
         <p class="card-text article-paragraph">This project shows that combining an arcade experience with a hardware-oriented lab environment is feasible, provided that the application is not treated as a loose collection of tools but as one clear user experience with separated modes, a consistent visual language, and a device-aware architecture. The central research question can therefore be answered positively: one desktop platform can unite both worlds without losing clarity, as long as structure, role separation, and context remain central in the design.</p>
@@ -171,7 +171,6 @@
           <li class="article-reference">Electron. (n.d.). <em>Electron documentation</em>. <a href="https://www.electronjs.org/docs/latest/" target="_blank" rel="noopener">https://www.electronjs.org/docs/latest/</a></li>
           <li class="article-reference">Espressif Systems. (n.d.). <em>ESP32 series</em>. <a href="https://www.espressif.com/en/products/socs/esp32" target="_blank" rel="noopener">https://www.espressif.com/en/products/socs/esp32</a></li>
           <li class="article-reference">Microsoft. (n.d.). <em>TypeScript documentation</em>. <a href="https://www.typescriptlang.org/docs/" target="_blank" rel="noopener">https://www.typescriptlang.org/docs/</a></li>
-          <li class="article-reference">Ollama. (n.d.). <em>Ollama</em>. <a href="https://ollama.com/" target="_blank" rel="noopener">https://ollama.com/</a></li>
           <li class="article-reference">React Team. (n.d.). <em>React documentation</em>. <a href="https://react.dev/" target="_blank" rel="noopener">https://react.dev/</a></li>
           <li class="article-reference">The Arcaders. (2026). <em>KdG-TheLab-Graduation-AI-GCP-Arcade-HackingPlatform</em> [Computer software]. GitHub. <a href="https://github.com/YuuneesIBH/KdG-TheLab-Graduation-AI-GCP-Arcade-HackingPlatform" target="_blank" rel="noopener">https://github.com/YuuneesIBH/KdG-TheLab-Graduation-AI-GCP-Arcade-HackingPlatform</a></li>
         </ul>
@@ -187,7 +186,7 @@
         <article class="mode-card arcade-mode">
           <span class="mode-kicker">CLASSIC PLAYFLOW</span>
           <h2 class="mode-title">Arcade Experience</h2>
-          <p class="mode-text">The arcade side is built around atmosphere, rhythm, and clarity. From the attract-style boot screen to the game library, everything is designed to feel like it belongs inside one retro cabinet shell, even when the games themselves use very different technologies.</p>
+          <p class="mode-text">The arcade side is built around atmosphere, rhythm, and clarity. From the attract-style boot screen to the game library, everything is designed to feel like it belongs inside one retro cabinet shell, even when the games themselves use very different technologies. That same framing matters for AI: the goal is to make it feel like the player is up against a real AI opponent that plays against them, not merely an old scripted "game AI" convention.</p>
           <div class="mode-chip-row">
             <span class="mode-chip">CRT BOOT FLOW</span>
             <span class="mode-chip">GAMEPAD INPUT</span>
@@ -229,13 +228,13 @@
             <div class="display-status">
               <span>CRT FX</span>
               <span>GAMEPAD ONLINE</span>
-              <span>HINT LAYER READY</span>
+              <span>AI OPPONENT READY</span>
             </div>
           </div>
         </div>
         <div class="preview-pane preview-copy-pane">
           <div class="preview-label">FROM BOOT SCREEN TO GAME LAUNCH</div>
-          <div class="preview-desc preview-desc-lg">From the very first boot screen, the interface is meant to feel like a real arcade cabinet: fullscreen, retro, rhythmic, and easy to read for an audience. The launcher centrally manages multiple runtimes and keeps the entire game flow visually coherent, so different kinds of software still feel like one platform.</div>
+          <div class="preview-desc preview-desc-lg">From the very first boot screen, the interface is meant to feel like a real arcade cabinet: fullscreen, retro, rhythmic, and easy to read for an audience. The launcher centrally manages multiple runtimes and keeps the entire game flow visually coherent, so different kinds of software still feel like one platform. In that same spirit, the AI on the play side is presented as a real AI opponent that plays against you, rather than a vague label for scripted CPU behavior.</div>
           <div class="capability-grid">
             <div class="capability-card">
               <span class="capability-label">VISUAL FLOW</span>
@@ -347,28 +346,28 @@
           <div class="stack-text">Stores AP profiles, enriched scan results, and other demo data locally for a usable workflow.</div>
         </div>
         <div class="stack-card">
-          <span class="stack-type">HINT LAYER</span>
-          <div class="stack-title">OLLAMA</div>
-          <div class="stack-text">Generates short gameplay hints based on the selected title, genre, and difficulty.</div>
+          <span class="stack-type">AI LAYER</span>
+          <div class="stack-title">CLOUD AI</div>
+          <div class="stack-text">Powers a cloud AI opponent layer that reacts to the selected title, genre, and difficulty.</div>
         </div>
       </div>
     </section>
 
     <section class="card" data-reveal>
-      <div class="section-label">◈ HINT LAYER &amp; EXTENSIBILITY</div>
+      <div class="section-label">◈ AI OPPONENT &amp; EXTENSIBILITY</div>
       <div class="split-grid">
         <div>
-          <p class="card-text">The hint layer is deliberately supportive rather than dominant. During play, the platform can generate short contextual hints that make classic software more approachable without breaking the cabinet rhythm.</p>
+          <p class="card-text">The AI layer is meant to feel like a real AI that plays against you during the arcade flow, not like the older catch-all "game AI" wording that players already associate with scripted behavior. The implementation is still shaped to keep the cabinet rhythm readable during a live demo.</p>
           <p class="card-text">The architecture is also open enough to grow with the project. Additional guidance flows, synchronized sessions, or connected services can be added later without changing the core split between arcade and Guppy.</p>
         </div>
         <div class="capability-grid">
           <div class="capability-card">
             <span class="capability-label">CURRENT USE</span>
-            <div class="capability-text">Local hints through Ollama based on game context and difficulty.</div>
+            <div class="capability-text">Cloud AI opponent behavior shaped by game context and difficulty.</div>
           </div>
           <div class="capability-card">
             <span class="capability-label">EXTENSIBLE SETUP</span>
-            <div class="capability-text">The same interface can later support richer guidance or connected services if the project grows beyond the local demo.</div>
+            <div class="capability-text">The same interface can later support richer opponent logic, connected services, or synchronized AI play as the project grows further.</div>
           </div>
           <div class="capability-card">
             <span class="capability-label">NEXT STEPS</span>
@@ -391,11 +390,11 @@
         </div>
         <div class="list-item">
           <span class="list-mark">02</span>
-          <div class="list-text">What makes the project strong is the combination of disciplines: frontend, desktop orchestration, embedded firmware, physical interaction, and a local hint layer meet in one tangible installation.</div>
+          <div class="list-text">What makes the project strong is the combination of disciplines: frontend, desktop orchestration, embedded firmware, physical interaction, and a cloud AI opponent layer meet in one tangible installation.</div>
         </div>
         <div class="list-item">
           <span class="list-mark">03</span>
-          <div class="list-text">The current version already demonstrates a working combination of launcher, local games, hardware bridge, and hint layer. It feels playful in form, but solid in structure.</div>
+          <div class="list-text">The current version already demonstrates a working combination of launcher, local games, hardware bridge, and an AI opponent layer. It feels playful in form, but solid in structure.</div>
         </div>
         <div class="list-item">
           <span class="list-mark">04</span>

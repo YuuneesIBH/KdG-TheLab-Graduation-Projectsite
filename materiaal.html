@@ -46,7 +46,7 @@
         </div>
         <div class="event-item">
           <span class="event-key">TIME</span>
-          <span class="event-value">21:00</span>
+          <span class="event-value">20:30</span>
         </div>
         <div class="event-item">
           <span class="event-key">ROOM</span>
@@ -69,17 +69,16 @@
   <main class="page">
     <section class="card" data-reveal>
       <div class="section-label">◈ RESOURCE HUB</div>
-      <p class="card-text">This page groups the public materials for the project. The main article already lives on the project page, while the video and slides will be linked here once the final exports are published.</p>
+      <p class="card-text">This page groups the public materials for the project. The local demo video is now embedded directly on the site, the main article lives on the project page, and the slides stay available in the dedicated viewer.</p>
     </section>
 
     <section class="resource-grid" data-reveal>
       <article class="resource-card">
-        <span class="resource-soon">AFTER EXPORT</span>
         <span class="resource-type">MEDIA</span>
-        <div class="resource-title">VIDEO DEMO</div>
-        <div class="resource-text">Short walkthrough of the cabinet, the arcade flow, and Guppy mode. The public video link will be added here after the final export is published.</div>
-        <div class="resource-meta">YOUTUBE / VIMEO / DRIVE</div>
-        <span class="resource-link is-disabled" aria-disabled="true">VIDEO LINK FOLLOWS</span>
+        <div class="resource-title">CHECK THE CABINET OUT</div>
+        <div class="resource-text">Watch the locally hosted walkthrough of the cabinet, the arcade flow, and Guppy mode directly on the website without leaving the materials page.</div>
+        <div class="resource-meta">LOCAL MP4 / EMBEDDED PLAYER</div>
+        <a href="#video-demo" class="resource-link">WATCH VIDEO ↓</a>
       </article>
 
       <article class="resource-card">
@@ -107,12 +106,27 @@
       </article>
     </section>
 
+    <section class="card video-section" data-reveal id="video-demo">
+      <div class="section-label">◈ CHECK THE CABINET OUT</div>
+      <p class="card-text">Curious about the final result? Watch it here!</p>
+      <div class="video-shell">
+        <video class="project-video" controls preload="metadata">
+          <source src="assets/TheArcaders_Promovideo.mp4" type="video/mp4" />
+          Your browser does not support HTML5 video. Use the direct MP4 link below.
+        </video>
+      </div>
+      <div class="video-actions">
+        <a href="assets/TheArcaders_Promovideo.mp4" target="_blank" rel="noopener" class="page-link">OPEN VIDEO ↗</a>
+        <a href="assets/TheArcaders_Promovideo.mp4" download="TheArcaders-Promovideo.mp4" class="page-link">DOWNLOAD MP4 ↓</a>
+      </div>
+    </section>
+
     <section class="card" data-reveal>
       <div class="section-label">◈ DELIVERY OVERVIEW</div>
       <div class="list-grid">
         <div class="list-item">
           <div class="list-mark">01</div>
-          <div class="list-text">The demo video gives visitors a short walkthrough of the cabinet without requiring a live explanation on site.</div>
+          <div class="list-text">The embedded demo video gives visitors a short walkthrough of the cabinet without requiring a live explanation on site.</div>
         </div>
         <div class="list-item">
           <div class="list-mark">02</div>
@@ -120,7 +134,7 @@
         </div>
         <div class="list-item">
           <div class="list-mark">03</div>
-          <div class="list-text">The slides capture the conference story in presentation form once the final export or share link is published.</div>
+          <div class="list-text">The slides capture the conference story in presentation form and remain available in the dedicated viewer page.</div>
         </div>
         <div class="list-item">
           <div class="list-mark">04</div>
