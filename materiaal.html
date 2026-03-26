@@ -69,15 +69,15 @@
   <main class="page">
     <section class="card" data-reveal>
       <div class="section-label">◈ RESOURCE HUB</div>
-      <p class="card-text">This page groups the public materials for the project. The local demo video is now embedded directly on the site, the main article lives on the project page, and the slides stay available in the dedicated viewer.</p>
+      <p class="card-text">This page groups the public materials for the project. The promo video now plays through Vimeo on the site, the main article lives on the project page, and the slides stay available in the dedicated viewer.</p>
     </section>
 
     <section class="resource-grid" data-reveal>
       <article class="resource-card">
         <span class="resource-type">MEDIA</span>
         <div class="resource-title">CHECK THE CABINET OUT</div>
-        <div class="resource-text">Watch the locally hosted walkthrough of the cabinet, the arcade flow, and Guppy mode directly on the website without leaving the materials page.</div>
-        <div class="resource-meta">LOCAL MP4 / EMBEDDED PLAYER</div>
+        <div class="resource-text">Watch the promo walkthrough of the cabinet, the arcade flow, and Guppy mode directly on the website through the Vimeo embed.</div>
+        <div class="resource-meta">VIMEO / EMBEDDED PLAYER</div>
         <a href="#video-demo" class="resource-link">WATCH VIDEO ↓</a>
       </article>
 
@@ -110,14 +110,18 @@
       <div class="section-label">◈ CHECK THE CABINET OUT</div>
       <p class="card-text">Curious about the final result? Watch it here!</p>
       <div class="video-shell">
-        <video class="project-video" controls preload="metadata">
-          <source src="assets/TheArcaders_Promovideo.mp4" type="video/mp4" />
-          Your browser does not support HTML5 video. Use the direct MP4 link below.
-        </video>
+        <iframe
+          class="project-video"
+          src="https://player.vimeo.com/video/1177285584?title=0&amp;byline=0&amp;portrait=0"
+          title="The Arcaders promo video"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
       </div>
       <div class="video-actions">
-        <a href="assets/TheArcaders_Promovideo.mp4" target="_blank" rel="noopener" class="page-link">OPEN VIDEO ↗</a>
-        <a href="assets/TheArcaders_Promovideo.mp4" download="TheArcaders-Promovideo.mp4" class="page-link">DOWNLOAD MP4 ↓</a>
+        <a href="https://vimeo.com/1177285584?share=copy&amp;fl=sv&amp;fe=ci" target="_blank" rel="noopener" class="page-link">OPEN ON VIMEO ↗</a>
+        <a href="https://player.vimeo.com/video/1177285584" target="_blank" rel="noopener" class="page-link">OPEN PLAYER ↗</a>
       </div>
     </section>
 
